@@ -55,6 +55,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mindsdb-server" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -755,8 +760,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../scout/Introduction/" title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../../scout/Introduction/" title="Getting Started" class="md-nav__link">
+      Getting Started
     </a>
   </li>
 
@@ -857,23 +862,60 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Getting Started
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
     
     <a href="./" title="Getting Started" class="md-nav__link md-nav__link--active">
       Getting Started
     </a>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ApiServer/" title="API Docs" class="md-nav__link">
-      API Docs
-    </a>
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-mindsdb-server" class="md-nav__link">
+    Installing MindsDB Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-the-server" class="md-nav__link">
+    Start the Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mindsdb-server-apis" class="md-nav__link">
+    MindsDB Server API's
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1117,6 +1159,52 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installing-mindsdb-server" class="md-nav__link">
+    Installing MindsDB Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-the-server" class="md-nav__link">
+    Start the Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mindsdb-server-apis" class="md-nav__link">
+    MindsDB Server API's
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1130,9 +1218,37 @@
                   
                 
                 
-                  <h1>Getting Started</h1>
-                
-                <p>Install</p>
+                <h1 id="mindsdb-server">MindsDB Server</h1>
+<p>The <a href="https://github.com/mindsdb/mindsdb_server">MindsDB Server</a> is an HTTP interface that makes MindsDB easy to use from different programming languages.</p>
+<h2 id="installing-mindsdb-server">Installing MindsDB Server</h2>
+<p>The MindsDB Server can be installed from PyPi:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">mindsdb</span><span class="o">-</span><span class="n">server</span>
+</code></pre></div>
+
+
+<p>Or you can install it from source:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">mindsdb</span><span class="o">/</span><span class="n">mindsdb_server</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">mindsdb_server</span>
+<span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">develop</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+</code></pre></div>
+
+
+<h2 id="start-the-server">Start the Server</h2>
+<p>To start MindsDB Server simply call the <code>start_server()</code> function:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb_server</span> <span class="k">as</span> <span class="nn">server</span>
+<span class="n">server</span><span class="o">.</span><span class="n">start_server</span><span class="p">()</span>
+</code></pre></div>
+
+
+<p>The default port for the server is 47334, but you can provide port parameter to change it:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">server</span><span class="o">.</span><span class="n">start_server</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">47335</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="mindsdb-server-apis">MindsDB Server API's</h2>
+<p>The detailed information for each endpoint can be found on the <a href="https://apidocs.mindsdb.com/?version=latest">api.docs.mindsdb</a>. 
+You can choose the example API request for your prefered programming language by simply changing the LANGUGE dropdown.</p>
                 
               
               
