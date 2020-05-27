@@ -627,8 +627,6 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Data sources
@@ -645,8 +643,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -657,30 +653,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mindsdb-data-source" class="md-nav__link">
+    MindsDB data source:
+  </a>
+  
+    <nav class="md-nav" aria-label="MindsDB data source:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#fileds" class="md-nav__link">
     FileDS
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#s3ds" class="md-nav__link">
     S3DS
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mysqlds" class="md-nav__link">
     MySqlDS
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#postgresds" class="md-nav__link">
     PostgresDS
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clickhouseds" class="md-nav__link">
+    ClickhouseDS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1202,8 +1218,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1214,30 +1228,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mindsdb-data-source" class="md-nav__link">
+    MindsDB data source:
+  </a>
+  
+    <nav class="md-nav" aria-label="MindsDB data source:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#fileds" class="md-nav__link">
     FileDS
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#s3ds" class="md-nav__link">
     S3DS
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mysqlds" class="md-nav__link">
     MySqlDS
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#postgresds" class="md-nav__link">
     PostgresDS
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clickhouseds" class="md-nav__link">
+    ClickhouseDS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1261,17 +1295,21 @@
                   
                 
                 
-                <p>Our goal is to make it very simple to ingest and prepare data that we can feed into MindsDB we call these <strong>DataSources</strong>, here are the basics:</p>
-<p>MindsDB.learn <strong>from_data</strong> argument can be any of the follows:
- * <strong>file</strong>: can be a path in the localsystem, stringio object or a url to a file, supported types are (csv, json, xlsx, xls).
-  * <strong>data frame</strong>: A <a href="">pandas DataFrame</a>, pandas is one of the most use data preparation libraries out there, so it makes sense that we support this.
- * <strong>MindsDB data source</strong>: MindsDB has a special class for datasources which lends itself for simple data ingestion and preparation, as well as to combine various datasources to learn from.</p>
+                  <h1>Data sources</h1>
+                
+                <p>Our goal is to make it very simple to ingest and prepare data that can be feed into MindsDB as <strong>DataSources</strong>. Here are the basics:</p>
+<p>mindsdb.learn <strong>from_data</strong> argument can be any of the following:</p>
+<ul>
+<li><strong>file</strong>: can be a path in the local system, stringio object or a url to a file, supported types are (csv, json, xlsx, xls).</li>
+<li><strong>data frame</strong>: A <a href="">pandas DataFrame</a>, pandas is one of the most useful data preparation libraries out there, so it makes sense that we support this.</li>
+<li><strong>MindsDB data source</strong>: MindsDB has a special class for datasources which lends itself for simple data ingestion and preparation, as well as to combine various datasources to learn from.</li>
+</ul>
 <p><em>Note: By default, only the FileDS data source is available, to make sure the other data sources work, install mindsdb via <code>pip install mindsdb[extra_data_sources]</code>, or replace <code>mindsdb</code> to <code>mindsdb[extra_data_sources]</code> in whatever install instructions are given for your platform</em></p>
 <h2 id="mindsdb-data-source">MindsDB data source:</h2>
 <p>MindsDB datasource is an enriched version of a pandas dataframe so all methods in the pandas dataframe also apply to MindsDB,
 However, the DataSource class provides a way to implement data loading transformations and cleaning of data.</p>
 <p>Some special implementations of datasources that already do cleaning and various tasks:</p>
-<p>You can learn about them in <a href="https://github.com/mindsdb/mindsdb/tree/master/mindsdb/libs/data_sources">here</a>:</p>
+<p>You can learn about them in <a href="https://github.com/mindsdb/mindsdb/tree/master/mindsdb/libs/data_sources">mindsdb repository</a>.</p>
 <h3 id="fileds">FileDS</h3>
 <p>An important one is the one MindsDB uses to work with files.</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">FileDS</span>
@@ -1290,40 +1328,40 @@ However, the DataSource class provides a way to implement data loading transform
 
 <p>FileDS arguments are:</p>
 <ul>
-<li><strong><em>file</em></strong> can be a path in the localsystem, stringio object or a url to a file, supported types are (csv, json, xlsx, xls).</li>
+<li><strong><em>file</em></strong> can be a path in the local system, stringio object or a url to a file, supported types are (csv, json, xlsx, xls).</li>
 <li><strong><em>clean_header</em></strong> (default=True) clean column names, so that they don't have special characters or white spaces.</li>
 <li><strong><em>clean_rows</em></strong> (default=True) Goes row by row making sure that nulls are nulls and that no corrupt data exists in them, it also cleans empty rows</li>
 <li><strong><em>custom_parser</em></strong> (default=None) special function to extract the actual table structure from the file in case you need special transformations.</li>
 </ul>
 <h3 id="s3ds">S3DS</h3>
-<p>Use an s3 object as the input.</p>
+<p>Use an <a href="https://aws.amazon.com/s3/">s3</a> object as the input.</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">Predictor</span><span class="p">,</span> <span class="n">S3DS</span>
 
 <span class="n">s3_ds</span> <span class="o">=</span> <span class="n">S3DS</span><span class="p">(</span><span class="n">bucket_name</span><span class="o">=</span><span class="s1">&#39;mindsdb-example-data&#39;</span><span class="p">,</span> <span class="n">file_path</span><span class="o">=</span><span class="s1">&#39;home_rentals.csv&#39;</span><span class="p">)</span><span class="err">`</span>
 
-<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="n">s3_ds</span><span class="p">,</span><span class="o">...</span> <span class="n">etc</span><span class="p">)</span>
+<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="n">s3_ds</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 
-<p>This data source also take the optional initialization/constructor arguments:</p>
+<p>This data source also takes the optional initialization/constructor arguments:</p>
 <ul>
 <li>access_key -- The AWS access key [string]</li>
 <li>secret_key -- The AWS secret key [string]</li>
 <li>use_default_credentails -- Whether or not to use the default credentials on your machine (e.g. the credentials inside <code>~/.aws</code> or the role of the machine), defaults to <code>False</code> [boolean]</li>
 </ul>
 <h3 id="mysqlds">MySqlDS</h3>
-<p>Used to select data from Mysql or Mariadb.</p>
+<p>Used to select data from <a href="https://www.mysql.com/">MySQL</a> or <a href="https://mariadb.org/">MariaDB</a>.</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">Predictor</span><span class="p">,</span> <span class="n">MySqlDS</span>
 
 <span class="n">mysql_ds</span> <span class="o">=</span> <span class="n">MySqlDS</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;SELECT COUNT(*), SUM(spend), SUM(is_click), website FROM advertising_data&quot;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s2">&quot;my_user&quot;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s2">&quot;my very secret password&quot;</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="s2">&quot;main_db&quot;</span><span class="p">)</span>
 
-<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="n">mysql_ds</span><span class="p">,</span><span class="o">...</span> <span class="n">etc</span><span class="p">)</span>
+<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="n">mysql_ds</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 
-<p>This data source also take the optional initialization/constructor arguments:</p>
+<p>This data source also takes the optional initialization/constructor arguments:</p>
 <ul>
-<li>query -- Query whith which to extract the data, mutually exclusive with <code>table</code> [string]</li>
+<li>query -- Query which extracts the data, mutually exclusive with <code>table</code> [string]</li>
 <li>host -- The host of the database (e.g. localhost or some ip) [string]</li>
 <li>user -- User for the database [string]</li>
 <li>password -- Password for the user [string]</li>
@@ -1332,12 +1370,33 @@ However, the DataSource class provides a way to implement data loading transform
 <li>table -- Table from which to select all the data, mutually exclusive with <code>query</code> [string]</li>
 </ul>
 <h3 id="postgresds">PostgresDS</h3>
-<p>Used to select data from Postgres.</p>
+<p>Used to select data from <a href="https://www.postgresql.org/">PostgreSQL</a>.</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">Predictor</span><span class="p">,</span> <span class="n">PostgresDS</span>
 
 <span class="n">pg_ds</span> <span class="o">=</span> <span class="n">PostgresDS</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;SELECT COUNT(*), SUM(spend), SUM(is_click), website FROM advertising_data&quot;</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s2">&quot;my_user&quot;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s2">&quot;my very secret password&quot;</span><span class="p">,</span> <span class="n">database</span><span class="o">=</span><span class="s2">&quot;main_db&quot;</span><span class="p">)</span>
 
-<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="n">pg_ds</span><span class="p">,</span><span class="o">...</span> <span class="n">etc</span><span class="p">)</span>
+<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="n">pg_ds</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>This data source also takes the optional initialization/constructor arguments:</p>
+<ul>
+<li>query -- Query which extracts the data, mutually exclusive with <code>table</code> [string]</li>
+<li>host -- The host of the database (e.g. localhost or some ip) [string]</li>
+<li>user -- User for the database [string]</li>
+<li>password -- Password for the user [string]</li>
+<li>database -- Database to use [string]</li>
+<li>port -- Port of the database [integer]</li>
+<li>table -- Table from which to select all the data, mutually exclusive with <code>query</code> [string]</li>
+</ul>
+<h3 id="clickhouseds">ClickhouseDS</h3>
+<p>Used to select data from <a href="https://clickhouse.tech/">ClickHouse</a>.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">Predictor</span><span class="p">,</span> <span class="n">ClickhouseDS</span>
+
+<span class="n">ch_ds</span> <span class="o">=</span> <span class="n">ClickhouseDS</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;SELECT COUNT(*), SUM(spend), SUM(is_click), website FROM default.advertising_data&quot;</span><span class="p">,</span>
+                     <span class="n">user</span><span class="o">=</span><span class="s2">&quot;my_user&quot;</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s2">&quot;my very secret password&quot;</span><span class="p">)</span>
+
+<span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="n">ch_ds</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;target&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 
@@ -1347,11 +1406,9 @@ However, the DataSource class provides a way to implement data loading transform
 <li>host -- The host of the database (e.g. localhost or some ip) [string]</li>
 <li>user -- User for the database [string]</li>
 <li>password -- Password for the user [string]</li>
-<li>database -- Database to use [string]</li>
 <li>port -- Port of the database [integer]</li>
 <li>table -- Table from which to select all the data, mutually exclusive with <code>query</code> [string]</li>
 </ul>
-<h1 id="_1"></h1>
                 
                   
                 
