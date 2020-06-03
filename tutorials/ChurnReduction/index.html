@@ -1325,13 +1325,10 @@ tenureNumber of months the customer has stayed with the company
 
 
 <span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
-    <span class="n">backend</span> <span class="o">=</span> <span class="s1">&#39;lightwood&#39;</span>
 
     <span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;employee_retention_model&#39;</span><span class="p">)</span>
 
-    <span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="s1">&#39;dataset/train.csv&#39;</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;Churn&#39;</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="n">backend</span><span class="p">,</span>
-              <span class="n">output_categories_importance_dictionary</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Yes&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;No&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">},</span>
-              <span class="n">disable_optional_analysis</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="s1">&#39;dataset/train.csv&#39;</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;Churn&#39;</span><span class="p">)</span>
 
     <span class="n">test_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;dataset/test.csv&#39;</span><span class="p">)</span>
     <span class="n">predictions</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;dataset/test.csv&#39;</span><span class="p">,</span>

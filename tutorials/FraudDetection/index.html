@@ -1335,11 +1335,10 @@ This dataset presents transactions that occurred in two days, where we have 492 
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">balanced_accuracy_score</span>
 
 <span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
-    <span class="n">backend</span><span class="o">=</span><span class="s1">&#39;lightwood&#39;</span>
 
     <span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;cc_fraud&#39;</span><span class="p">)</span>
 
-    <span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="s1">&#39;processed_data/train.csv&#39;</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;Class&#39;</span><span class="p">,</span> <span class="n">backend</span><span class="o">=</span><span class="n">backend</span><span class="p">,</span> <span class="n">window_size</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span><span class="n">from_data</span><span class="o">=</span><span class="s1">&#39;processed_data/train.csv&#39;</span><span class="p">,</span> <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;Class&#39;</span><span class="p">)</span>
 
     <span class="n">predictions</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;processed_data/test.csv&#39;</span><span class="p">)</span>
 
