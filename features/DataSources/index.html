@@ -1247,7 +1247,7 @@
 <p>mindsdb.learn <strong>from_data</strong> argument can be any of the following:</p>
 <ul>
 <li><strong>file</strong>: can be a path in the local system, stringio object or a url to a file, supported types are (csv, json, xlsx, xls).</li>
-<li><strong>data frame</strong>: A <a href="">pandas DataFrame</a>, pandas is one of the most useful data preparation libraries out there, so it makes sense that we support this.</li>
+<li><strong>data frame</strong>: A <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html">pandas DataFrame</a>, pandas is one of the most useful data preparation libraries out there, so it makes sense that we support this.</li>
 <li><strong>MindsDB data source</strong>: MindsDB has a special class for datasources which lends itself for simple data ingestion and preparation, as well as to combine various datasources to learn from.</li>
 </ul>
 <p><em>Note: By default, only the FileDS data source is available, to make sure the other data sources work, install mindsdb via <code>pip install mindsdb[extra_data_sources]</code>, or replace <code>mindsdb</code> to <code>mindsdb[extra_data_sources]</code> in whatever install instructions are given for your platform</em></p>
@@ -1255,7 +1255,7 @@
 <p>MindsDB datasource is an enriched version of a pandas dataframe so all methods in the pandas dataframe also apply to MindsDB,
 However, the DataSource class provides a way to implement data loading transformations and cleaning of data.</p>
 <p>Some special implementations of datasources that already do cleaning and various tasks:</p>
-<p>You can learn about them in <a href="https://github.com/mindsdb/mindsdb/tree/master/mindsdb/libs/data_sources">mindsdb repository</a>.</p>
+<p>You can learn about them in <a href="https://github.com/mindsdb/mindsdb_native/tree/stable/mindsdb_native/libs/data_sources">mindsdb repository</a>.</p>
 <h3 id="fileds">FileDS</h3>
 <p>An important one is the one MindsDB uses to work with files.</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">FileDS</span>
