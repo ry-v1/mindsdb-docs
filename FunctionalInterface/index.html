@@ -10,18 +10,18 @@
       
       
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.0.0">
     
     
       
-        <title>Column metrics</title>
+        <title>Functional interface</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c3000690.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c3000690.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.4444686e.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.4444686e.min.css">
       
       
         
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-scores" class="md-skip">
+        <a href="#get-models" class="md-skip">
           Skip to content
         </a>
       
@@ -72,9 +72,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../.." title="MindsDB Documentation" class="md-header-nav__button md-logo" aria-label="MindsDB Documentation">
+    <a href=".." title="MindsDB Documentation" class="md-header-nav__button md-logo" aria-label="MindsDB Documentation">
       
-  <img src="../../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Column metrics
+              Functional interface
             
           </span>
         </div>
@@ -158,9 +158,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation">
+    <a href=".." title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation">
       
-  <img src="../../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
     MindsDB Documentation
@@ -212,7 +212,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Installing/" title="Installing MindsDB" class="md-nav__link">
+    <a href="../Installing/" title="Installing MindsDB" class="md-nav__link">
       Installing MindsDB
     </a>
   </li>
@@ -224,7 +224,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../GoogleColab/" title="Google Colab" class="md-nav__link">
+    <a href="../GoogleColab/" title="Google Colab" class="md-nav__link">
       Google Colab
     </a>
   </li>
@@ -236,7 +236,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../JupyterNotebook/" title="Running on Jupyter Notebook" class="md-nav__link">
+    <a href="../JupyterNotebook/" title="Running on Jupyter Notebook" class="md-nav__link">
       Running on Jupyter Notebook
     </a>
   </li>
@@ -280,7 +280,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/BasicExample/" title="Starter Example" class="md-nav__link">
+    <a href="../tutorials/BasicExample/" title="Starter Example" class="md-nav__link">
       Starter Example
     </a>
   </li>
@@ -292,7 +292,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../PredictorInterface/" title="Predictor Interface" class="md-nav__link">
+    <a href="../PredictorInterface/" title="Predictor Interface" class="md-nav__link">
       Predictor Interface
     </a>
   </li>
@@ -302,11 +302,98 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../FunctionalInterface/" title="Functional Interface" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Functional Interface
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Functional Interface" class="md-nav__link md-nav__link--active">
       Functional Interface
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#get-models" class="md-nav__link">
+    Get Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#get-model-data" class="md-nav__link">
+    Get Model Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-model" class="md-nav__link">
+    Export Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-model" class="md-nav__link">
+    Rename Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#export-storage" class="md-nav__link">
+    Export Storage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#load-model" class="md-nav__link">
+    Load Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-model" class="md-nav__link">
+    Delete Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyse-dataset" class="md-nav__link">
+    Analyse dataset
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -366,7 +453,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/PredictiveMaintenance/" title="Predictive Maintenance" class="md-nav__link">
+    <a href="../tutorials/PredictiveMaintenance/" title="Predictive Maintenance" class="md-nav__link">
       Predictive Maintenance
     </a>
   </li>
@@ -408,7 +495,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/CreditScoring/" title="Credit Scoring" class="md-nav__link">
+    <a href="../tutorials/CreditScoring/" title="Credit Scoring" class="md-nav__link">
       Credit Scoring
     </a>
   </li>
@@ -450,7 +537,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/CustomerLifetimeValue/" title="Custiner Lifetime Value Optimization" class="md-nav__link">
+    <a href="../tutorials/CustomerLifetimeValue/" title="Custiner Lifetime Value Optimization" class="md-nav__link">
       Custiner Lifetime Value Optimization
     </a>
   </li>
@@ -462,7 +549,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/FraudDetection/" title="Fraud Detection" class="md-nav__link">
+    <a href="../tutorials/FraudDetection/" title="Fraud Detection" class="md-nav__link">
       Fraud Detection
     </a>
   </li>
@@ -504,7 +591,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/PatientHealthOutcomes/" title="Patient Health" class="md-nav__link">
+    <a href="../tutorials/PatientHealthOutcomes/" title="Patient Health" class="md-nav__link">
       Patient Health
     </a>
   </li>
@@ -516,7 +603,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/MedicalDiagnosis/" title="Medical Diagnosis" class="md-nav__link">
+    <a href="../tutorials/MedicalDiagnosis/" title="Medical Diagnosis" class="md-nav__link">
       Medical Diagnosis
     </a>
   </li>
@@ -558,7 +645,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/HotelBooking/" title="Hotel Booking Demand" class="md-nav__link">
+    <a href="../tutorials/HotelBooking/" title="Hotel Booking Demand" class="md-nav__link">
       Hotel Booking Demand
     </a>
   </li>
@@ -600,7 +687,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/ChurnReduction/" title="Customer Churn Reduction" class="md-nav__link">
+    <a href="../tutorials/ChurnReduction/" title="Customer Churn Reduction" class="md-nav__link">
       Customer Churn Reduction
     </a>
   </li>
@@ -622,7 +709,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../tutorials/AdvancedExamples/" title="Advanced Data types" class="md-nav__link">
+    <a href="../tutorials/AdvancedExamples/" title="Advanced Data types" class="md-nav__link">
       Advanced Data types
     </a>
   </li>
@@ -634,7 +721,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../DataSources/" title="Data sources" class="md-nav__link">
+    <a href="../features/DataSources/" title="Data sources" class="md-nav__link">
       Data sources
     </a>
   </li>
@@ -646,7 +733,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Config/" title="Configuration Settings" class="md-nav__link">
+    <a href="../Config/" title="Configuration Settings" class="md-nav__link">
       Configuration Settings
     </a>
   </li>
@@ -656,95 +743,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Column metrics
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Column metrics" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../features/ColumnMetrics/" title="Column metrics" class="md-nav__link">
       Column metrics
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#value-distribution-score" class="md-nav__link">
-    Value Distribution Score
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#duplicates-score" class="md-nav__link">
-    Duplicates Score
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#empty-cells-score" class="md-nav__link">
-    Empty cells score
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#data-type-distribution-score" class="md-nav__link">
-    Data type distribution score
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#z-test-based-outlier-score" class="md-nav__link">
-    Z Test based outlier score
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#local-outlier-factor-score" class="md-nav__link">
-    Local outlier factor score
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#similarity-score" class="md-nav__link">
-    Similarity score
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -754,7 +757,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../server/SDKs/" title="MindsDB SDK" class="md-nav__link">
+    <a href="../server/SDKs/" title="MindsDB SDK" class="md-nav__link">
       MindsDB SDK
     </a>
   </li>
@@ -796,7 +799,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../lightwood/info/" title="Introduction to Lightwood" class="md-nav__link">
+    <a href="../lightwood/info/" title="Introduction to Lightwood" class="md-nav__link">
       Introduction to Lightwood
     </a>
   </li>
@@ -808,7 +811,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../lightwood/API/" title="Predictor API" class="md-nav__link">
+    <a href="../lightwood/API/" title="Predictor API" class="md-nav__link">
       Predictor API
     </a>
   </li>
@@ -875,7 +878,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../scout/Introduction/" title="Getting Started" class="md-nav__link">
+    <a href="../scout/Introduction/" title="Getting Started" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -887,7 +890,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../scout/Connection/" title="Connection" class="md-nav__link">
+    <a href="../scout/Connection/" title="Connection" class="md-nav__link">
       Connection
     </a>
   </li>
@@ -899,7 +902,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../scout/Datasources/" title="Datasources" class="md-nav__link">
+    <a href="../scout/Datasources/" title="Datasources" class="md-nav__link">
       Datasources
     </a>
   </li>
@@ -911,7 +914,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../scout/Predictors/" title="Predictors" class="md-nav__link">
+    <a href="../scout/Predictors/" title="Predictors" class="md-nav__link">
       Predictors
     </a>
   </li>
@@ -923,7 +926,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../scout/Query/" title="Query" class="md-nav__link">
+    <a href="../scout/Query/" title="Query" class="md-nav__link">
       Query
     </a>
   </li>
@@ -970,7 +973,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../comparisons/ComparsionWithOtherLibraries/" title="Comparison with other Libraries" class="md-nav__link">
+    <a href="../comparisons/ComparsionWithOtherLibraries/" title="Comparison with other Libraries" class="md-nav__link">
       Comparison with other Libraries
     </a>
   </li>
@@ -982,7 +985,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../comparisons/AccuracyComparison/" title="Comparing MindsDB accuracy" class="md-nav__link">
+    <a href="../comparisons/AccuracyComparison/" title="Comparing MindsDB accuracy" class="md-nav__link">
       Comparing MindsDB accuracy
     </a>
   </li>
@@ -1024,7 +1027,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../integrations/AwsSageMaker/" title="Amazon SageMaker" class="md-nav__link">
+    <a href="../integrations/AwsSageMaker/" title="Amazon SageMaker" class="md-nav__link">
       Amazon SageMaker
     </a>
   </li>
@@ -1061,7 +1064,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../integrations/MindsDBSageContainer/" title="MindsDB container" class="md-nav__link">
+    <a href="../integrations/MindsDBSageContainer/" title="MindsDB container" class="md-nav__link">
       MindsDB container
     </a>
   </li>
@@ -1073,7 +1076,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../integrations/UseMindsDBinSage/" title="Train and host MindsDB models" class="md-nav__link">
+    <a href="../integrations/UseMindsDBinSage/" title="Train and host MindsDB models" class="md-nav__link">
       Train and host MindsDB models
     </a>
   </li>
@@ -1085,7 +1088,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../integrations/SageMakerSDK/" title="Train and host MindsDB models using SageMaker SDK" class="md-nav__link">
+    <a href="../integrations/SageMakerSDK/" title="Train and host MindsDB models using SageMaker SDK" class="md-nav__link">
       Train and host MindsDB models using SageMaker SDK
     </a>
   </li>
@@ -1097,7 +1100,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../integrations/CallSageMakerEndpoint/" title="Invoke MindsDB endpoint on SageMaker" class="md-nav__link">
+    <a href="../integrations/CallSageMakerEndpoint/" title="Invoke MindsDB endpoint on SageMaker" class="md-nav__link">
       Invoke MindsDB endpoint on SageMaker
     </a>
   </li>
@@ -1144,7 +1147,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../FAQ/" title="FAQ" class="md-nav__link">
+    <a href="../FAQ/" title="FAQ" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -1156,7 +1159,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../InsideMindsDB/" title="Inside MindsDB" class="md-nav__link">
+    <a href="../InsideMindsDB/" title="Inside MindsDB" class="md-nav__link">
       Inside MindsDB
     </a>
   </li>
@@ -1181,8 +1184,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1193,50 +1194,57 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#value-distribution-score" class="md-nav__link">
-    Value Distribution Score
+  <a href="#get-models" class="md-nav__link">
+    Get Models
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#duplicates-score" class="md-nav__link">
-    Duplicates Score
+  <a href="#get-model-data" class="md-nav__link">
+    Get Model Data
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#empty-cells-score" class="md-nav__link">
-    Empty cells score
+  <a href="#export-model" class="md-nav__link">
+    Export Model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-type-distribution-score" class="md-nav__link">
-    Data type distribution score
+  <a href="#rename-model" class="md-nav__link">
+    Rename Model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#z-test-based-outlier-score" class="md-nav__link">
-    Z Test based outlier score
+  <a href="#export-storage" class="md-nav__link">
+    Export Storage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#local-outlier-factor-score" class="md-nav__link">
-    Local outlier factor score
+  <a href="#load-model" class="md-nav__link">
+    Load Model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#similarity-score" class="md-nav__link">
-    Similarity score
+  <a href="#delete-model" class="md-nav__link">
+    Delete Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyse-dataset" class="md-nav__link">
+    Analyse dataset
   </a>
   
 </li>
@@ -1253,7 +1261,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/features/ColumnMetrics.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/FunctionalInterface.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
                 
@@ -1261,58 +1269,58 @@
                   
                 
                 
-                <p>Mindsdb generate some metrics (we call them "scores") for each of the columns it processes in order to determine the quality.</p>
-<p>This document contains information on each of these scores, as well as an outline for how mindsdb computes and uses them.</p>
-<p>A score of zero is considered very bad, whilst a score of one is considered perfect.</p>
-<h1 id="the-scores">The Scores</h1>
-<h2 id="value-distribution-score">Value Distribution Score</h2>
-<p><strong>Warning if &lt; 3</strong></p>
-<p><em>Reliability: Average</em></p>
-<p>The value distribution score represents how biased the data is towards a certain value.</p>
-<p>This score can indicate either biasing towards one specific value of a column or a large number of outliers. So it is a reliable quality indicator but we aren't always sure “why” that is (as in, it can fall into 2 buckets).</p>
-<p>Currently a warning based on this score indicates a value is present that's at least 5x times more than the mean.</p>
-<h2 id="duplicates-score">Duplicates Score</h2>
-<p><strong>Warning if &lt; 6 and overall quality is low</strong></p>
-<p><em>Reliability: Poor</em></p>
-<p>As it stands, duplicates score consists in the % of duplicate values / 100. So, it can range from 0 (no duplicates) to 1 (all the values have one or more duplicates).</p>
-<p>This score is always 0 if the data type is categorical or date. Since duplicates in those cases are to be expected.</p>
-<p>It’s also not necessarily “bad” if this score is large, for example, a text column consisting of: [‘house’, ‘apartment’, ‘house’, ‘apartment’, ‘duplex’, ‘house’, ‘apartment’, ‘duplex’], maybe not be interpreted as “categorical” by our data type generator and will have a duplicate score of 1.</p>
-<h2 id="empty-cells-score">Empty cells score</h2>
-<p><strong>Warning if &lt; 8</strong></p>
-<p><em>Reliability: Good</em></p>
-<p>This score is computed as the % of empty values / 100. It’s very reliable on its own, since empty values in a column are never a good sign.</p>
-<h2 id="data-type-distribution-score">Data type distribution score</h2>
-<p><strong>Warning if &gt; 7</strong></p>
-<p><em>Reliability: Average</em></p>
-<p>This score indicates the % of data that are not of the same data type as the principal column type / 100.</p>
-<h2 id="z-test-based-outlier-score">Z Test based outlier score</h2>
-<p><strong>Warning if &lt; 6</strong></p>
-<p><em>Reliability: Average</em></p>
-<p>This score indicates the % of data that are 3 STDs or more away from the mean.</p>
-<p>There are various types of data where this can be the case, but usually it might indicate the data has too much noise.</p>
-<h2 id="local-outlier-factor-score">Local outlier factor score</h2>
-<p><strong>Warning if &lt; 4</strong></p>
-<p><em>Reliability: Average</em></p>
-<p>The data consistency score is mainly based upon the <strong>Data Type Distribution Score</strong> and the <strong>Empty Cells Score</strong>, the <strong>Duplicates Score</strong> is also taken into account if present but with a smaller (2x smaller) bias.</p>
-<h2 id="similarity-score">Similarity score</h2>
-<p><strong>Warning if &lt; 6</strong></p>
-<p><em>Reliability: Good (When high)</em></p>
-<p>This score is simply a matthews correlation applied between this column and all other column.</p>
-<p>The score * 100 is the number of values which are similar in the column that is most similar to the scored column.</p>
-<h1 id="derived-scores">Derived scores</h1>
-<h2 id="consistency-score">Consistency score</h2>
-<p><strong>Warning if: &gt; 0.2</strong></p>
-<p><em>Reliability: Average</em></p>
-<p>The data consistency score is mainly based upon the <strong>Data Type Distribution Score</strong> and the <strong>Empty Cells Score</strong>, the <strong>Duplicates Score</strong> is also taken into account if present but with a smaller (2x smaller) bias.</p>
-<h2 id="redundancy-score">Redundancy score</h2>
-<p><strong>Warning if &lt; 5</strong></p>
-<p><em>Reliability: Average</em></p>
-<p>The value is based in equal part on the <strong>Similarity Score</strong> and the <strong>Correlation Score</strong>.</p>
-<h2 id="variabilityrandomness-score">Variability/Randomness score</h2>
-<p><strong>Warning if &lt; 6</strong></p>
-<p><em>Reliability: Average</em></p>
-<p>The value is based in equal part on the <strong>Z Test based outliers score</strong>, the <strong>LOG based outlier score</strong> and the <strong>Value Distribution Score</strong>.</p>
-<p>In certain cases, only the <strong>Value Distribution Score </strong>can be computed for the column. Then, we reduce the relevance of this score by dividing it by 2 (possibly not the best approach).</p>
+                  <h1>Functional Interface</h1>
+                
+                <p>This section goes into detail about each of the methods exposed by Functional and each of the arguments they work with. All of the Functional methods act as utilities for Predictors.</p>
+<h3 id="get-models">Get Models</h3>
+<p><code>F.get_models()</code></p>
+<p>Takes no argument, returns a list with all the models and some information about them.</p>
+<p><strong>Note: this is akin to a static method, it acts the same way no matter what predictor object you call it on, but due to various consideration it hasn't been swtiched to a static method yet</strong></p>
+<h3 id="get-model-data">Get Model Data</h3>
+<p><code>F.get_model_data(model_name='model_name')</code></p>
+<p>Returns all the data we have about a given model. This is a rather complex python dictionary meant to be interpreted by the Scout GUI. We recommend looking at the training logs mindsdb_native gives to see some of these insights in an easy to read format.</p>
+<ul>
+<li>model_name -- Required argument, the name of the model to return data about.</li>
+</ul>
+<p><strong>Note: this is akin to a static method, it acts the same way no matter what predictor object you call it on, but due to various consideration it hasn't been swtiched to a static method yet</strong></p>
+<h3 id="export-model">Export Model</h3>
+<p><code>F.export_predictor(model_name='model_name')</code></p>
+<p>Exports this predictor's data (or the data of another predictor) to a zip file inside the CONFIG.MINDSDB_STORAGE_PATH directory.</p>
+<ul>
+<li>model_name -- The name of the model to export (defaults to the name of the current Predictor).</li>
+</ul>
+<h3 id="rename-model">Rename Model</h3>
+<p><code>F.rename_model(old_model_name='old_name', new_model_name='new_name')</code></p>
+<p>Renames the created model.</p>
+<ul>
+<li>old_model_name: the name of the model you want to rename</li>
+<li>new_model_name: the new name of the model</li>
+</ul>
+<h3 id="export-storage">Export Storage</h3>
+<p><code>F.export_storage(mindsdb_storage_dir='mindsdb_storage')</code></p>
+<p>Exports mindsdb's storage directory to a zip file.</p>
+<ul>
+<li>mindsdb_storage_dir -- The location where you want to save the mindsdb storage directory.</li>
+</ul>
+<h3 id="load-model">Load Model</h3>
+<p><code>F.import_model(model_archive_path='path/to/predictor.zip')</code></p>
+<p>Loads a predictor that was previously exported into the current mindsdb_native storage path so you can use it later.</p>
+<ul>
+<li>model_archive_path -- full_path that contains your mindsdb_native predictor zip file.</li>
+</ul>
+<h3 id="delete-model">Delete Model</h3>
+<p><code>F.delete_model(model_name='blah')</code></p>
+<p>Deletes a given predictor from the storage path mindsdb_native is currently operating with.</p>
+<ul>
+<li>model_name -- The name of the model to delete (defaults to the name of the current Predictor).</li>
+</ul>
+<h3 id="analyse-dataset">Analyse dataset</h3>
+<p><code>F.analyse_dataset(from_data=the_data_source, sample_settings={})</code></p>
+<p>Analyse the dataset inside the data source, file, ulr or pandas dataframe. This runs all the steps prior to actually training a predictive model.</p>
+<ul>
+<li>from_data -- the data that you want to analyse, this can be either a file, a pandas data frame, a url or a mindsdb data source.</li>
+<li>sample_settings --  A dictionary of options for sampling from the dataset. Includes <code>sample_for_analysis</code>. <code>sample_for_training</code>, <code>sample_margin_of_error</code>, <code>sample_confidence_level</code>, <code>sample_percentage</code>, <code>sample_function</code>.</li>
+</ul>
                 
                   
                 
@@ -1331,15 +1339,15 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.f45d2d8d.min.js"></script>
-      <script src="../../assets/javascripts/bundle.74d0b805.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../assets/javascripts/vendor.f45d2d8d.min.js"></script>
+      <script src="../assets/javascripts/bundle.74d0b805.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.7f7c8775.min.js"
+            worker: "../assets/javascripts/worker/search.7f7c8775.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
