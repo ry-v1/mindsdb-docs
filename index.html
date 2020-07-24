@@ -1178,6 +1178,8 @@ Once that's done run the <strong>anaconda prompt</strong>.</p>
 </code></pre></div>
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Uw2Phj5Q0xA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2 id="what-to-do-if-installation-fails">What to do if installation fails</h2>
 <ol>
 <li>
@@ -1187,17 +1189,15 @@ Once that's done run the <strong>anaconda prompt</strong>.</p>
 <p>Try manually installing pytorch following the simple instructions on their official website: https://pytorch.org/get-started/locally/</p>
 </li>
 <li>
-<p>If you are using linux install <code>tkinter</code> from your package manager in certain situations.</p>
-</li>
-<li>
-<p>Ubuntu/Debian: <code>sudo apt-get install python3-tk tk</code></p>
-</li>
+<p>If you are using Linux install <code>tkinter</code> from your package manager in certain situations.</p>
+<ul>
+<li>Ubuntu/Debian: <code>sudo apt-get install python3-tk tk</code></li>
 <li>Fedora: <code>sudo dnf -y install python3-tkinter</code></li>
-<li>
-<p>Arch: <code>sudo pacman -S tk</code></p>
+<li>Arch: <code>sudo pacman -S tk</code></li>
+</ul>
 </li>
 <li>
-<p>If you are using windows, but are not using Conda, try installing conda and running the installation from the <strong>anaconda prompt</strong>.</p>
+<p>If you are using Windows, but are not using Anaconda or Conda, try installing one of them and running the installation from the <strong>anaconda prompt</strong>.</p>
 </li>
 <li>
 <p>If you've previously installed mindsdb and are having issues upgrading to a new version, try installing with the command: <code>pip install mindsdb --upgrade</code>, if that still fails, try: <code>pip install mindsdb --no-cache-dir --force-reinstall</code>.</p>
@@ -1206,6 +1206,8 @@ Once that's done run the <strong>anaconda prompt</strong>.</p>
 <p>If none of this works, try installing mindsdb using the docker container and create an issue with the installation errors you got on: https://github.com/mindsdb/mindsdb/issues, we'll try to review it within a few hours.</p>
 </li>
 </ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SH1nCChpcps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2 id="build-and-run-your-docker-container">Build and run your docker container</h2>
 <p>Alternatively, you can also run MindsDB in a docker container. Assuming that you have <a href="https://docs.docker.com/install/">docker</a> installed in your computer.
 On your terminal, you can do the following:</p>
@@ -1215,7 +1217,8 @@ On your terminal, you can do the following:</p>
 
 <h2 id="hardware">Hardware</h2>
 <p>Due to the fact that pytorch only supports certain instruction sets, mindsdb can only use certain types of GPUs.
-Currently, on AWS, <code>g3</code> and <code>p3</code> instance types should be fine, but <code>p2</code> and <code>g2</code> instances are not supported</p>
+Currently, on AWS, <code>g3</code> and <code>p3</code> instance types should be fine, but <code>p2</code> and <code>g2</code> instances are not supported.
+VPS on DigitalOcean with 3 GB Memory and above should work.</p>
                 
                   
                 

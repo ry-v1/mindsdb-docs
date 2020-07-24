@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dataextractor" class="md-skip">
+        <a href="#the-mindsdb-stack" class="md-skip">
           Skip to content
         </a>
       
@@ -1103,6 +1103,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-mindsdb-stack" class="md-nav__link">
+    The MindsDB Stack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dataextractor" class="md-nav__link">
     DataExtractor
   </a>
@@ -1166,6 +1173,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#the-mindsdb-stack" class="md-nav__link">
+    The MindsDB Stack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dataextractor" class="md-nav__link">
     DataExtractor
   </a>
@@ -1215,7 +1229,10 @@
                 
                   <h1>Inside MindsDB</h1>
                 
-                <p>Different transactions PREDICT, CREATE MODEL etc, require different steps/phases, however they may share some of these phases, in order to make this process modular we keep the variables in the Transaction controller (the data bus) as the communication interface, as such, the implementation of a given phase can change, so long as the expected variables in the bus prevail. (We will describe in more detail some of the Phase Modules in the next section)</p>
+                <p>Different transactions PREDICT, CREATE MODEL etc, require different steps/phases, however they may share some of these phases, in order to make this process modular we keep the variables in the Transaction controller (the data bus) as the communication interface, as such, the implementation of a given phase can change, so long as the expected variables in the bus prevail. (We will describe in more detail some of the Phase Modules in the next section).</p>
+<h2 id="the-mindsdb-stack">The MindsDB Stack</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_eKI3ixBSqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <h2 id="dataextractor">DataExtractor</h2>
 <p>It deals with extracting inputs from various data-sources such as files, directories and SQL compatible databases. If input is a query, it builds the joins with all implied tables (if any).</p>
 <ul>
