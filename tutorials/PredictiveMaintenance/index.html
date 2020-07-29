@@ -420,6 +420,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mindsdb-accuracy" class="md-nav__link">
+    Mindsdb accuracy
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -947,18 +954,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../comparisons/AccuracyComparison/" title="Comparing MindsDB accuracy" class="md-nav__link">
-      Comparing MindsDB accuracy
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -1181,6 +1176,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mindsdb-accuracy" class="md-nav__link">
+    Mindsdb accuracy
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1221,6 +1223,120 @@
 </table>
 <h2 id="processed-dataset">Processed Dataset</h2>
 <h6 id="_1"><a href="https://github.com/mindsdb/mindsdb-examples/tree/master/others/robotic_failure/dataset"><img alt="Data" src="https://img.shields.io/badge/GET--DATA-RoboticFailure-green" /></a></h6>
+<p>This dataset contains force and torque measurements on a robot after failure detection. Each failure is characterized by 15 force/torque samples collected at regular time intervals.</p>
+<table>
+<thead>
+<tr>
+<th align="right">id</th>
+<th align="right">time</th>
+<th align="right">F_x</th>
+<th align="right">F_y</th>
+<th align="right">F_z</th>
+<th align="right">T_x</th>
+<th align="right">T_y</th>
+<th align="right">T_z</th>
+<th align="left">target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">-1</td>
+<td align="right">-1</td>
+<td align="right">63</td>
+<td align="right">-3</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td align="left">True</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">62</td>
+<td align="right">-3</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td align="left">True</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">-1</td>
+<td align="right">-1</td>
+<td align="right">61</td>
+<td align="right">-3</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="left">True</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">-1</td>
+<td align="right">-1</td>
+<td align="right">63</td>
+<td align="right">-2</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td align="left">True</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">4</td>
+<td align="right">-1</td>
+<td align="right">-1</td>
+<td align="right">63</td>
+<td align="right">-3</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td align="left">True</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">5</td>
+<td align="right">-1</td>
+<td align="right">-1</td>
+<td align="right">63</td>
+<td align="right">-3</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td align="left">True</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">-1</td>
+<td align="right">-1</td>
+<td align="right">63</td>
+<td align="right">-3</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="left">True</td>
+</tr>
+</tbody>
+</table>
+<details>
+  <summary>Click to expand Features Informations:</summary>
+
+<div class="codehilite"><pre><span></span><code><span class="n">id</span>
+<span class="k">time</span>
+<span class="n">F_x</span>
+<span class="n">F_y</span>
+<span class="n">F_z</span>
+<span class="n">T_x</span>
+<span class="n">T_y</span>
+<span class="n">T_z</span>
+<span class="n">target</span>
+
+<span class="n">Fx1</span> <span class="p">...</span> <span class="n">Fx15</span> <span class="k">is</span> <span class="n">the</span> <span class="n">evolution</span> <span class="k">of</span> <span class="k">force</span> <span class="n">Fx</span> <span class="k">in</span> <span class="n">the</span> <span class="n">observation</span> <span class="n">window</span>
+</code></pre></div>
+
+
+</details>
+
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">r2_score</span>
@@ -1256,7 +1372,27 @@
 </code></pre></div>
 
 
-<p>{'accuracy': 0.8399922571492469, 'accuracy_function': 'balanced_accuracy_score', 'backend': 'lightwood'}</p>
+<h2 id="mindsdb-accuracy">Mindsdb accuracy</h2>
+<table>
+<thead>
+<tr>
+<th>Accuraccy</th>
+<th>Backend</th>
+<th>Last run</th>
+<th>MindsDB Version</th>
+<th>Latest Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.8399922571492469</td>
+<td>Lightwood</td>
+<td>15 April 2020</td>
+<td><a href="https://pypi.org/project/MindsDB/1.16.0/"><img alt="MindsDB" src="https://img.shields.io/badge/pypi--package-1.16.0-green" /></a></td>
+<td><a href="https://pypi.org/project/MindsDB/"><img src="https://badge.fury.io/py/MindsDB.svg" alt="PyPi Version"></a></td>
+</tr>
+</tbody>
+</table>
                 
                   
                 

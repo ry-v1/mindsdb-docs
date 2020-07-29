@@ -961,18 +961,6 @@
   </li>
 
         
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../comparisons/AccuracyComparison/" title="Comparing MindsDB accuracy" class="md-nav__link">
-      Comparing MindsDB accuracy
-    </a>
-  </li>
-
-        
       </ul>
     </nav>
   </li>
@@ -1248,42 +1236,316 @@
 </tbody>
 </table>
 <h2 id="processed-dataset">Processed Dataset</h2>
-<h6 id="_1"><a href="https://github.com/mindsdb/mindsdb-examples/tree/master/benchmarks/credit_card_fraud/processed_data"><img alt="Data" src="https://img.shields.io/badge/GET--DATA-DefaultofCreditCard-green" /></a></h6>
+<h6 id="_1"><a href="https://github.com/mindsdb/mindsdb-examples/tree/master/classics/credit_card_fraud/processed_data"><img alt="Data" src="https://img.shields.io/badge/GET--DATA-DefaultofCreditCard-green" /></a></h6>
 <p>The <a href="https://www.kaggle.com/mlg-ulb/creditcardfraud">datasets</a> contains transactions made by credit cards in September 2013 by european cardholders.
 This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions. The goal is to identify fraudulent credit card transactions. Feature 'Class' is the response variable and it takes value 1 in case of fraud and 0 otherwise.</p>
+<table>
+<thead>
+<tr>
+<th align="right">Time</th>
+<th align="right">V1</th>
+<th align="right">V2</th>
+<th align="right">V3</th>
+<th align="right">V4</th>
+<th align="right">V5</th>
+<th align="right">V6</th>
+<th align="right">V7</th>
+<th align="right">V8</th>
+<th align="right">V9</th>
+<th align="right">V10</th>
+<th align="right">V11</th>
+<th align="right">V12</th>
+<th align="right">V13</th>
+<th align="right">V14</th>
+<th align="right">V15</th>
+<th align="right">V16</th>
+<th align="right">V17</th>
+<th align="right">V18</th>
+<th align="right">V19</th>
+<th align="right">V20</th>
+<th align="right">V21</th>
+<th align="right">V22</th>
+<th align="right">V23</th>
+<th align="right">V24</th>
+<th align="right">V25</th>
+<th align="right">V26</th>
+<th align="right">V27</th>
+<th align="right">V28</th>
+<th align="right">Amount</th>
+<th align="right">Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td align="right">-1.35835</td>
+<td align="right">-1.34016</td>
+<td align="right">1.77321</td>
+<td align="right">0.37978</td>
+<td align="right">-0.503198</td>
+<td align="right">1.8005</td>
+<td align="right">0.791461</td>
+<td align="right">0.247676</td>
+<td align="right">-1.51465</td>
+<td align="right">0.207643</td>
+<td align="right">0.624501</td>
+<td align="right">0.0660837</td>
+<td align="right">0.717293</td>
+<td align="right">-0.165946</td>
+<td align="right">2.34586</td>
+<td align="right">-2.89008</td>
+<td align="right">1.10997</td>
+<td align="right">-0.121359</td>
+<td align="right">-2.26186</td>
+<td align="right">0.52498</td>
+<td align="right">0.247998</td>
+<td align="right">0.771679</td>
+<td align="right">0.909412</td>
+<td align="right">-0.689281</td>
+<td align="right">-0.327642</td>
+<td align="right">-0.139097</td>
+<td align="right">-0.0553528</td>
+<td align="right">-0.0597518</td>
+<td align="right">378.66</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">1.22966</td>
+<td align="right">0.141004</td>
+<td align="right">0.0453708</td>
+<td align="right">1.20261</td>
+<td align="right">0.191881</td>
+<td align="right">0.272708</td>
+<td align="right">-0.005159</td>
+<td align="right">0.0812129</td>
+<td align="right">0.46496</td>
+<td align="right">-0.0992543</td>
+<td align="right">-1.41691</td>
+<td align="right">-0.153826</td>
+<td align="right">-0.751063</td>
+<td align="right">0.167372</td>
+<td align="right">0.0501436</td>
+<td align="right">-0.443587</td>
+<td align="right">0.00282051</td>
+<td align="right">-0.611987</td>
+<td align="right">-0.045575</td>
+<td align="right">-0.219633</td>
+<td align="right">-0.167716</td>
+<td align="right">-0.27071</td>
+<td align="right">-0.154104</td>
+<td align="right">-0.780055</td>
+<td align="right">0.750137</td>
+<td align="right">-0.257237</td>
+<td align="right">0.0345074</td>
+<td align="right">0.00516777</td>
+<td align="right">4.99</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td align="right">1.06937</td>
+<td align="right">0.287722</td>
+<td align="right">0.828613</td>
+<td align="right">2.71252</td>
+<td align="right">-0.178398</td>
+<td align="right">0.337544</td>
+<td align="right">-0.0967169</td>
+<td align="right">0.115982</td>
+<td align="right">-0.221083</td>
+<td align="right">0.46023</td>
+<td align="right">-0.773657</td>
+<td align="right">0.323387</td>
+<td align="right">-0.0110759</td>
+<td align="right">-0.178485</td>
+<td align="right">-0.655564</td>
+<td align="right">-0.199925</td>
+<td align="right">0.124005</td>
+<td align="right">-0.980496</td>
+<td align="right">-0.982916</td>
+<td align="right">-0.153197</td>
+<td align="right">-0.0368755</td>
+<td align="right">0.0744124</td>
+<td align="right">-0.0714074</td>
+<td align="right">0.104744</td>
+<td align="right">0.548265</td>
+<td align="right">0.104094</td>
+<td align="right">0.0214911</td>
+<td align="right">0.0212933</td>
+<td align="right">27.5</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td align="right">-5.40126</td>
+<td align="right">-5.45015</td>
+<td align="right">1.1863</td>
+<td align="right">1.73624</td>
+<td align="right">3.04911</td>
+<td align="right">-1.76341</td>
+<td align="right">-1.55974</td>
+<td align="right">0.160842</td>
+<td align="right">1.23309</td>
+<td align="right">0.345173</td>
+<td align="right">0.91723</td>
+<td align="right">0.970117</td>
+<td align="right">-0.266568</td>
+<td align="right">-0.47913</td>
+<td align="right">-0.526609</td>
+<td align="right">0.472004</td>
+<td align="right">-0.725481</td>
+<td align="right">0.0750814</td>
+<td align="right">-0.406867</td>
+<td align="right">-2.19685</td>
+<td align="right">-0.5036</td>
+<td align="right">0.98446</td>
+<td align="right">2.45859</td>
+<td align="right">0.0421189</td>
+<td align="right">-0.481631</td>
+<td align="right">-0.621272</td>
+<td align="right">0.392053</td>
+<td align="right">0.949594</td>
+<td align="right">46.8</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td align="right">1.11088</td>
+<td align="right">0.168717</td>
+<td align="right">0.517144</td>
+<td align="right">1.32541</td>
+<td align="right">-0.191573</td>
+<td align="right">0.0195037</td>
+<td align="right">-0.0318491</td>
+<td align="right">0.11762</td>
+<td align="right">0.0176647</td>
+<td align="right">0.0448648</td>
+<td align="right">1.34507</td>
+<td align="right">1.28634</td>
+<td align="right">-0.252267</td>
+<td align="right">0.274458</td>
+<td align="right">-0.810394</td>
+<td align="right">-0.587005</td>
+<td align="right">0.0874511</td>
+<td align="right">-0.550474</td>
+<td align="right">-0.154749</td>
+<td align="right">-0.19012</td>
+<td align="right">-0.0377087</td>
+<td align="right">0.0957015</td>
+<td align="right">-0.0481976</td>
+<td align="right">0.232115</td>
+<td align="right">0.606201</td>
+<td align="right">-0.342097</td>
+<td align="right">0.0367696</td>
+<td align="right">0.00747996</td>
+<td align="right">6.54</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="right">33</td>
+<td align="right">-0.607877</td>
+<td align="right">1.03135</td>
+<td align="right">1.74045</td>
+<td align="right">1.23211</td>
+<td align="right">0.418592</td>
+<td align="right">0.119168</td>
+<td align="right">0.850893</td>
+<td align="right">-0.176267</td>
+<td align="right">-0.243501</td>
+<td align="right">0.148455</td>
+<td align="right">-0.387003</td>
+<td align="right">0.398299</td>
+<td align="right">0.481917</td>
+<td align="right">-0.365439</td>
+<td align="right">0.235545</td>
+<td align="right">-1.34781</td>
+<td align="right">0.504648</td>
+<td align="right">-0.798405</td>
+<td align="right">0.75971</td>
+<td align="right">0.254325</td>
+<td align="right">-0.0873292</td>
+<td align="right">0.258315</td>
+<td align="right">-0.264775</td>
+<td align="right">0.118282</td>
+<td align="right">0.173508</td>
+<td align="right">-0.217041</td>
+<td align="right">0.0943119</td>
+<td align="right">-0.0330413</td>
+<td align="right">14.8</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td align="right">1.3864</td>
+<td align="right">-0.794209</td>
+<td align="right">0.778224</td>
+<td align="right">-0.864708</td>
+<td align="right">-1.06413</td>
+<td align="right">0.351296</td>
+<td align="right">-1.19145</td>
+<td align="right">0.0526856</td>
+<td align="right">-0.304404</td>
+<td align="right">0.576517</td>
+<td align="right">-1.63111</td>
+<td align="right">0.0425595</td>
+<td align="right">2.0479</td>
+<td align="right">-0.739338</td>
+<td align="right">1.45622</td>
+<td align="right">-0.27205</td>
+<td align="right">-0.932007</td>
+<td align="right">1.92653</td>
+<td align="right">-0.659939</td>
+<td align="right">-0.273033</td>
+<td align="right">-0.228727</td>
+<td align="right">-0.123522</td>
+<td align="right">-0.131025</td>
+<td align="right">-0.929668</td>
+<td align="right">0.181379</td>
+<td align="right">1.19493</td>
+<td align="right">0.000531332</td>
+<td align="right">0.0199106</td>
+<td align="right">30.9</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
 <details>
   <summary>Click to expand Features Informations:</summary>
-* Time Number of seconds elapsed between this transaction and the first transaction in the dataset
-* V1may be result of a PCA Dimensionality reduction to protect user identities and sensitive features(v1-v28)
-* V2
-* V3
-* V4
-* V5
-* V6
-* V7
-* V8
-* V9
-* V10
-* V11
-* V12
-* V13
-* V14
-* V15
-* V16
-* V17
-* V18
-* V19
-* V20
-* V21
-* V22
-* V23
-* V24
-* V25
-* V26
-* V27
-* V28abc
-* AmountTransaction amount
-* Class1 for fraudulent transactions, 0 otherwise
+
+<div class="codehilite"><pre><span></span><code><span class="err">* Time Number of seconds elapsed between this transaction and the first transaction in the dataset</span>
+<span class="err">* V1may be result of a PCA Dimensionality reduction to protect user identities and sensitive features(v1-v28)</span>
+<span class="err">* V2</span>
+<span class="err">* V3</span>
+<span class="err">* V4</span>
+<span class="err">* V5</span>
+<span class="err">* V6</span>
+<span class="err">* V7</span>
+<span class="err">* V8</span>
+<span class="err">* V9</span>
+<span class="err">* V10</span>
+<span class="err">* V11</span>
+<span class="err">* V12</span>
+<span class="err">* V13</span>
+<span class="err">* V14</span>
+<span class="err">* V15</span>
+<span class="err">* V16</span>
+<span class="err">* V17</span>
+<span class="err">* V18</span>
+<span class="err">* V19</span>
+<span class="err">* V20</span>
+<span class="err">* V21</span>
+<span class="err">* V22</span>
+<span class="err">* V23</span>
+<span class="err">* V24</span>
+<span class="err">* V25</span>
+<span class="err">* V26</span>
+<span class="err">* V27</span>
+<span class="err">* V28abc</span>
+<span class="err">* AmountTransaction amount</span>
+<span class="err">* Class1 for fraudulent transactions, 0 otherwise</span>
+</code></pre></div>
+
+
 
 </details>
 
@@ -1341,558 +1603,6 @@ This dataset presents transactions that occurred in two days, where we have 492 
 </tr>
 </tbody>
 </table>
-<details>
-  <summary>Click to expand MindsDB's explanation for each row:</summary>
-
-<div class="codehilite"><pre><span></span><code><span class="p">{</span>
-    <span class="err">&#39;accuracy&#39;:</span> <span class="err">0.921724518459069,</span>
-    <span class="err">&#39;backend&#39;:</span> <span class="err">&#39;lightwood&#39;,</span>
-    <span class="err">&#39;additional</span> <span class="err">info&#39;:</span> <span class="err">[{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9957,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9956,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9958,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9956,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9954,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9953,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9957,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9955,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9957,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9955,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9958,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9918,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">},</span> <span class="p">{</span>
-                <span class="err">&#39;Class&#39;:</span> <span class="err">{</span>
-                    <span class="err">&#39;predicted_value&#39;:</span> <span class="err">&#39;0&#39;,</span>
-                    <span class="err">&#39;confidence&#39;:</span> <span class="err">0.9959,</span>
-                    <span class="err">&#39;explanation&#39;:</span> <span class="err">{</span>
-                        <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                        <span class="err">&#39;important_missing_information&#39;:</span> <span class="err">[]</span>
-                    <span class="p">}</span><span class="err">,</span>
-                    <span class="err">&#39;prediction_quality&#39;:</span> <span class="err">&#39;very</span> <span class="err">confident&#39;,</span>
-                    <span class="err">&#39;important_missing_information&#39;:</span> <span class="p">[]</span>
-                <span class="err">}</span>
-            <span class="err">}</span>
-    <span class="err">]</span>
-<span class="err">}</span>
-</code></pre></div>
-
-
-</details>
                 
                   
                 
