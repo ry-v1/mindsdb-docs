@@ -10,16 +10,16 @@
       
       
       
-      <link rel="shortcut icon" href="../assets/mdb_logo.png">
+      <link rel="shortcut icon" href="../../assets/mdb_logo.png">
       <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.0.0">
     
     
       
-        <title>Google Colab</title>
+        <title>AutoML in MariaDB - MindsDB Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c3000690.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c3000690.min.css">
       
       
     
@@ -33,7 +33,7 @@
     
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     
       
@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-mindsdb-with-google-colab" class="md-skip">
+        <a href="#machine-learning-models-as-tables-in-mariadb" class="md-skip">
           Skip to content
         </a>
       
@@ -66,9 +66,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="MindsDB Documentation" class="md-header-nav__button md-logo" aria-label="MindsDB Documentation">
+    <a href="../.." title="MindsDB Documentation" class="md-header-nav__button md-logo" aria-label="MindsDB Documentation">
       
-  <img src="../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Google Colab
+              AutoML in  MariaDB
             
           </span>
         </div>
@@ -152,9 +152,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation">
+    <a href="../.." title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation">
       
-  <img src="../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
     MindsDB Documentation
@@ -181,7 +181,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Installing/" title="Installing MindsDB" class="md-nav__link">
+    <a href="../../Installing/" title="Installing MindsDB" class="md-nav__link">
       Installing MindsDB
     </a>
   </li>
@@ -191,10 +191,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       AutoML in Databases
@@ -218,7 +220,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../databases/" title="Machine Learning Models as Tables" class="md-nav__link">
+    <a href="../" title="Machine Learning Models as Tables" class="md-nav__link">
       Machine Learning Models as Tables
     </a>
   </li>
@@ -230,7 +232,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../databases/Clickhouse/" title="AutoML in ClickHouse" class="md-nav__link">
+    <a href="../Clickhouse/" title="AutoML in ClickHouse" class="md-nav__link">
       AutoML in ClickHouse
     </a>
   </li>
@@ -240,11 +242,81 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../databases/MariaDB/" title="AutoML in MariaDB" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        AutoML in  MariaDB
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="AutoML in MariaDB" class="md-nav__link md-nav__link--active">
       AutoML in  MariaDB
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-mindsdb" class="md-nav__link">
+    Start MindsDB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train-new-model" class="md-nav__link">
+    Train new model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-the-model" class="md-nav__link">
+    Query the model
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -257,12 +329,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       AutoML from code
@@ -284,12 +354,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
     
     <label class="md-nav__link" for="nav-3-1">
       Python native
@@ -313,7 +381,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/BasicExample/" title="Starter Example" class="md-nav__link">
+    <a href="../../tutorials/BasicExample/" title="Starter Example" class="md-nav__link">
       Starter Example
     </a>
   </li>
@@ -323,67 +391,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Google Colab
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Google Colab" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../GoogleColab/" title="Google Colab" class="md-nav__link">
       Google Colab
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#lets-build-an-example" class="md-nav__link">
-    Let's Build an Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#training" class="md-nav__link">
-    Training
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    Testing
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -393,7 +405,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../JupyterNotebook/" title="Running on Jupyter Notebook" class="md-nav__link">
+    <a href="../../JupyterNotebook/" title="Running on Jupyter Notebook" class="md-nav__link">
       Running on Jupyter Notebook
     </a>
   </li>
@@ -405,7 +417,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../PredictorInterface/" title="Predictor Interface" class="md-nav__link">
+    <a href="../../PredictorInterface/" title="Predictor Interface" class="md-nav__link">
       Predictor Interface
     </a>
   </li>
@@ -417,7 +429,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../FunctionalInterface/" title="Functional Interface" class="md-nav__link">
+    <a href="../../FunctionalInterface/" title="Functional Interface" class="md-nav__link">
       Functional Interface
     </a>
   </li>
@@ -429,7 +441,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/AdvancedExamples/" title="Advanced Data types" class="md-nav__link">
+    <a href="../../tutorials/AdvancedExamples/" title="Advanced Data types" class="md-nav__link">
       Advanced Data types
     </a>
   </li>
@@ -441,7 +453,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../features/DataSources/" title="Data sources" class="md-nav__link">
+    <a href="../../features/DataSources/" title="Data sources" class="md-nav__link">
       Data sources
     </a>
   </li>
@@ -453,7 +465,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Config/" title="Configuration Settings" class="md-nav__link">
+    <a href="../../Config/" title="Configuration Settings" class="md-nav__link">
       Configuration Settings
     </a>
   </li>
@@ -465,7 +477,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../features/ColumnMetrics/" title="Column metrics" class="md-nav__link">
+    <a href="../../features/ColumnMetrics/" title="Column metrics" class="md-nav__link">
       Column metrics
     </a>
   </li>
@@ -477,7 +489,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../server/SDKs/" title="MindsDB SDK" class="md-nav__link">
+    <a href="../../server/SDKs/" title="MindsDB SDK" class="md-nav__link">
       MindsDB SDK
     </a>
   </li>
@@ -539,7 +551,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/PredictiveMaintenance/" title="Predictive Maintenance" class="md-nav__link">
+    <a href="../../tutorials/PredictiveMaintenance/" title="Predictive Maintenance" class="md-nav__link">
       Predictive Maintenance
     </a>
   </li>
@@ -581,7 +593,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/CreditScoring/" title="Credit Scoring" class="md-nav__link">
+    <a href="../../tutorials/CreditScoring/" title="Credit Scoring" class="md-nav__link">
       Credit Scoring
     </a>
   </li>
@@ -623,7 +635,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/CustomerLifetimeValue/" title="Custiner Lifetime Value Optimization" class="md-nav__link">
+    <a href="../../tutorials/CustomerLifetimeValue/" title="Custiner Lifetime Value Optimization" class="md-nav__link">
       Custiner Lifetime Value Optimization
     </a>
   </li>
@@ -635,7 +647,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/FraudDetection/" title="Fraud Detection" class="md-nav__link">
+    <a href="../../tutorials/FraudDetection/" title="Fraud Detection" class="md-nav__link">
       Fraud Detection
     </a>
   </li>
@@ -677,7 +689,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/PatientHealthOutcomes/" title="Patient Health" class="md-nav__link">
+    <a href="../../tutorials/PatientHealthOutcomes/" title="Patient Health" class="md-nav__link">
       Patient Health
     </a>
   </li>
@@ -689,7 +701,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/MedicalDiagnosis/" title="Medical Diagnosis" class="md-nav__link">
+    <a href="../../tutorials/MedicalDiagnosis/" title="Medical Diagnosis" class="md-nav__link">
       Medical Diagnosis
     </a>
   </li>
@@ -731,7 +743,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/HotelBooking/" title="Hotel Booking Demand" class="md-nav__link">
+    <a href="../../tutorials/HotelBooking/" title="Hotel Booking Demand" class="md-nav__link">
       Hotel Booking Demand
     </a>
   </li>
@@ -773,7 +785,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/ChurnReduction/" title="Customer Churn Reduction" class="md-nav__link">
+    <a href="../../tutorials/ChurnReduction/" title="Customer Churn Reduction" class="md-nav__link">
       Customer Churn Reduction
     </a>
   </li>
@@ -830,7 +842,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrations/AwsSageMaker/" title="Amazon SageMaker" class="md-nav__link">
+    <a href="../../integrations/AwsSageMaker/" title="Amazon SageMaker" class="md-nav__link">
       Amazon SageMaker
     </a>
   </li>
@@ -867,7 +879,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrations/MindsDBSageContainer/" title="MindsDB container" class="md-nav__link">
+    <a href="../../integrations/MindsDBSageContainer/" title="MindsDB container" class="md-nav__link">
       MindsDB container
     </a>
   </li>
@@ -879,7 +891,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrations/UseMindsDBinSage/" title="Train and host MindsDB models" class="md-nav__link">
+    <a href="../../integrations/UseMindsDBinSage/" title="Train and host MindsDB models" class="md-nav__link">
       Train and host MindsDB models
     </a>
   </li>
@@ -891,7 +903,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrations/SageMakerSDK/" title="Train and host MindsDB models using SageMaker SDK" class="md-nav__link">
+    <a href="../../integrations/SageMakerSDK/" title="Train and host MindsDB models using SageMaker SDK" class="md-nav__link">
       Train and host MindsDB models using SageMaker SDK
     </a>
   </li>
@@ -903,7 +915,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrations/CallSageMakerEndpoint/" title="Invoke MindsDB endpoint on SageMaker" class="md-nav__link">
+    <a href="../../integrations/CallSageMakerEndpoint/" title="Invoke MindsDB endpoint on SageMaker" class="md-nav__link">
       Invoke MindsDB endpoint on SageMaker
     </a>
   </li>
@@ -950,7 +962,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lightwood/info/" title="Introduction to Lightwood" class="md-nav__link">
+    <a href="../../lightwood/info/" title="Introduction to Lightwood" class="md-nav__link">
       Introduction to Lightwood
     </a>
   </li>
@@ -962,7 +974,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lightwood/API/" title="Predictor API" class="md-nav__link">
+    <a href="../../lightwood/API/" title="Predictor API" class="md-nav__link">
       Predictor API
     </a>
   </li>
@@ -1029,7 +1041,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Introduction/" title="Getting Started" class="md-nav__link">
+    <a href="../../scout/Introduction/" title="Getting Started" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -1041,7 +1053,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Connection/" title="Connection" class="md-nav__link">
+    <a href="../../scout/Connection/" title="Connection" class="md-nav__link">
       Connection
     </a>
   </li>
@@ -1053,7 +1065,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Datasources/" title="Datasources" class="md-nav__link">
+    <a href="../../scout/Datasources/" title="Datasources" class="md-nav__link">
       Datasources
     </a>
   </li>
@@ -1065,7 +1077,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Predictors/" title="Predictors" class="md-nav__link">
+    <a href="../../scout/Predictors/" title="Predictors" class="md-nav__link">
       Predictors
     </a>
   </li>
@@ -1077,7 +1089,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Query/" title="Query" class="md-nav__link">
+    <a href="../../scout/Query/" title="Query" class="md-nav__link">
       Query
     </a>
   </li>
@@ -1124,7 +1136,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../comparisons/ComparsionWithOtherLibraries/" title="Comparison with other Libraries" class="md-nav__link">
+    <a href="../../comparisons/ComparsionWithOtherLibraries/" title="Comparison with other Libraries" class="md-nav__link">
       Comparison with other Libraries
     </a>
   </li>
@@ -1166,7 +1178,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+    <a href="../../FAQ/" title="FAQ" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -1178,7 +1190,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../InsideMindsDB/" title="Inside MindsDB" class="md-nav__link">
+    <a href="../../InsideMindsDB/" title="Inside MindsDB" class="md-nav__link">
       Inside MindsDB
     </a>
   </li>
@@ -1215,22 +1227,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#lets-build-an-example" class="md-nav__link">
-    Let's Build an Example
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#training" class="md-nav__link">
-    Training
+  <a href="#configuration" class="md-nav__link">
+    Configuration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#testing" class="md-nav__link">
-    Testing
+  <a href="#start-mindsdb" class="md-nav__link">
+    Start MindsDB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train-new-model" class="md-nav__link">
+    Train new model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-the-model" class="md-nav__link">
+    Query the model
   </a>
   
 </li>
@@ -1247,7 +1273,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/GoogleColab.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/databases/MariaDB.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
                 
@@ -1255,82 +1281,148 @@
                   
                 
                 
-                <h1 id="using-mindsdb-with-google-colab">Using MindsDB with Google Colab</h1>
-<p><a href="https://colab.research.google.com">Google Colab</a> is a free cloud service that supports free GPU!
-You can use MindsDB there.</p>
-<p>Fortunately, this is really easy.
-Inside Google Colab, start a new python 3 notebook and in a cell, insert the following:</p>
-<div class="codehilite"><pre><span></span><code><span class="sx">!pip install mindsdb</span>
+                <h1 id="machine-learning-models-as-tables-in-mariadb">Machine Learning Models as Tables in MariaDB</h1>
+<p>Now, you can train machine learning models straight from the database by using MindsDB and <a href="https://mariadb.org/">MariaDB</a>.</p>
+<p><img alt="MindsDB-ClickHouse" src="/assets/databases/mdb-maria.png" /></p>
+<h3 id="prerequisite">Prerequisite</h3>
+<p>You will need MindsDB version &gt;= 2.0.0 and MariaDB installed.</p>
+<h3 id="configuration">Configuration</h3>
+<div class="admonition info">
+<p class="admonition-title">Default configuration</p>
+<p>MindsDB will try to use the default configuration(hosts, ports, usernames) for each of the database integrations. If you want to extend that or you are
+using different parameters creata a new config.json file. </p>
+</div>
+<p>The minimum required configuration inside config.json is:</p>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+   <span class="nt">&quot;api&quot;</span><span class="p">:</span> <span class="p">{</span>
+       <span class="nt">&quot;http&quot;</span><span class="p">:</span> <span class="p">{</span>
+           <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;47334&quot;</span>
+       <span class="p">},</span>
+       <span class="nt">&quot;mysql&quot;</span><span class="p">:</span> <span class="p">{</span>
+           <span class="nt">&quot;certificate_path&quot;</span><span class="p">:</span> <span class="s2">&quot;path/to/cert&quot;</span><span class="p">,</span> 
+           <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;log&quot;</span><span class="p">:</span> <span class="p">{</span>
+               <span class="nt">&quot;console_level&quot;</span><span class="p">:</span> <span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
+               <span class="nt">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;mysql.log&quot;</span><span class="p">,</span>
+               <span class="nt">&quot;file_level&quot;</span><span class="p">:</span> <span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
+               <span class="nt">&quot;folder&quot;</span><span class="p">:</span> <span class="s2">&quot;logs/&quot;</span><span class="p">,</span>
+               <span class="nt">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;%(asctime)s - %(levelname)s - %(message)s&quot;</span>
+           <span class="p">},</span>
+           <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;47335&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;pass&quot;</span>
+       <span class="p">}</span>
+   <span class="p">},</span>
+   <span class="nt">&quot;config_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.1&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;debug&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+   <span class="nt">&quot;integrations&quot;</span><span class="p">:</span> <span class="p">{</span>
+       <span class="nt">&quot;default_mariadb&quot;</span><span class="p">:</span> <span class="p">{</span>
+           <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+           <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;password&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">3306</span><span class="p">,</span>
+           <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;mariadb&quot;</span><span class="p">,</span>
+           <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span>
+       <span class="p">}</span>
+   <span class="p">},</span>
+   <span class="nt">&quot;interface&quot;</span><span class="p">:</span> <span class="p">{</span>
+       <span class="nt">&quot;datastore&quot;</span><span class="p">:</span> <span class="p">{</span>
+           <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+           <span class="nt">&quot;storage_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/path/to/storage&quot;</span>
+       <span class="p">},</span>
+       <span class="nt">&quot;mindsdb_native&quot;</span><span class="p">:{</span>
+           <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+           <span class="nt">&quot;storage_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/path/to/storage&quot;</span>
+       <span class="p">}</span>
+   <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
 
 
-<h2 id="lets-build-an-example">Let's Build an Example</h2>
-<p>First we'll import mindsdb</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">Predictor</span>
-</code></pre></div>
-
-
-<p>This is where it gets interesting. It's now up to you to install any dataset you want, so long as its a Excel or CSV file (or some other from of separator, doesn't necessarily have to be a ","). We'll be linking it to colab next.
-In this example we'll be using a students dataset from kaggle. You can get it <a href="https://www.kaggle.com/spscientist/students-performance-in-exams">here</a> if you want to follow along.</p>
-<p>Once you have your CSV dataset, download it and put it in a new folder on your Google Drive. We'll call ours <code>Datasets</code>.
-We'll import it into colab using the following lines</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">drive</span>
-<span class="n">drive</span><span class="o">.</span><span class="n">mount</span><span class="p">(</span><span class="s1">&#39;/content/drive&#39;</span><span class="p">)</span>
-</code></pre></div>
-
-
-<p>Now just follow the instructions and enter your authorization code.</p>
-<p>Here, we'll create a file variable that stores the path of our dataset.</p>
-<div class="codehilite"><pre><span></span><code><span class="err">file = &quot;./drive/My Drive/Datasets/StudentsPerformance.csv&quot;</span>
-</code></pre></div>
-
-
-<h2 id="training">Training</h2>
-<p>Now let's create a MindsDB object and initialize it with our data from the file. We'll be prediciting the reading_score and we'll call our model 'reading_predictor'.
-Remember that depending on your dataset, these variables might change. Just remember that <code>predict</code> is the column you want to make your prediction on and that mindsdb will automatically rename all your columns to snake case.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">mdb</span> <span class="o">=</span> <span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;reading_score_predictor&#39;</span><span class="p">)</span>
-
-<span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
-  <span class="n">from_data</span><span class="o">=</span><span class="n">file</span><span class="p">,</span> <span class="c1"># call file from google drive</span>
-  <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;reading_score&#39;</span>
-<span class="p">)</span>
-</code></pre></div>
-
-
-<h2 id="testing">Testing</h2>
-<p><code>mdb.predict</code> needs 1 of 2 arguments to run a prediction:</p>
 <ul>
-<li><code>when_data</code> is a file with one or more values or a dictionary of values for the columns we want to use for the prediction.</li>
+<li>api -- This key is used for starting the MindsDB server by providing the host and port.</li>
+<li>mysql -- This key is used for database integrations that works through MySQL protocol. The required keys are username, password and MySQL host.</li>
+<li>integrations -- This key specifies the integration type in this case <code>default_mariadb</code>. The required keys are user, host, password and port to connect to the MariaDB.</li>
+<li>interface -- This key is used by MindsDB and provides the path to the directory where MindsDB shall save some configuration and model files.</li>
 </ul>
-<p>The following example uses a dictionary via the <code>when_data</code> argument:</p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Load the `Predictor` we just trained via calling `learn`</span>
-<span class="n">mdb</span> <span class="o">=</span> <span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;reading_score_predictor&#39;</span><span class="p">)</span>
-
-<span class="c1"># Make a prediction using a dictionary of input values</span>
-<span class="n">predictions</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span>
-  <span class="n">when_data</span><span class="o">=</span><span class="p">{</span>
-      <span class="s1">&#39;writing_score&#39;</span> <span class="p">:</span> <span class="mi">80</span><span class="p">,</span>
-      <span class="s1">&#39;math_score&#39;</span> <span class="p">:</span> <span class="mi">40</span><span class="p">,</span>
-      <span class="s1">&#39;lunch&#39;</span> <span class="p">:</span> <span class="s1">&#39;standard&#39;</span>
-  <span class="p">}</span>
-<span class="p">)</span>
+<p>Also you need to install the CONNECT Storage Engine to access external local data. Checkout <a href="https://mariadb.com/kb/en/installing-the-connect-storage-engine/">MariaDB docs</a> on how to do that.</p>
+<h3 id="start-mindsdb">Start MindsDB</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">mindsdb</span> <span class="o">--</span><span class="n">api</span><span class="o">=</span><span class="n">mysql</span> <span class="o">--</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">json</span>
 </code></pre></div>
 
 
-<p>Finally we print out the result:</p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># The dictionary containing the prediction</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">predictions</span><span class="p">)</span>
-<span class="c1"># The confidence we have in the prediction (`0` being the lowest confidence and `1` being 100% confident)</span>
-<span class="c1"># Note, the confidence is not equal to the model&#39;s overall accuracy</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="s1">&#39;reading_score_confidence&#39;</span><span class="p">])</span>
-<span class="c1"># The actual value predicted for `reading_score`</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">predictions</span><span class="p">[</span><span class="s1">&#39;reading_score&#39;</span><span class="p">])</span>
+<p>The --api parameter specifies the type of API to use in this case mysql. 
+The --config specifies the location of the configuration file. </p>
+<h3 id="train-new-model">Train new model</h3>
+<p>To train a new model, insert a new record inside the mindsdb.predictors table as:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">,</span> <span class="n">training_options</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">&#39;used_cars_model&#39;</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM test.UsedCarsData&#39;</span><span class="p">,</span> <span class="err">{</span><span class="ss">&quot;option&quot;</span><span class="p">:</span> <span class="ss">&quot;value&quot;</span><span class="err">}</span><span class="p">);</span>
 </code></pre></div>
 
 
-<p>You can find our <a href="https://colab.research.google.com/drive/1qsIkMeAQFE-MOEANd1c6KMyT44OnycSb">Google Colab Example</a>  here.</p>
-                
-                  
+<ul>
+<li>name (string) -- The name of the predictor.</li>
+<li>predict (string) --  The feature you want to predict, in this example SO2.</li>
+<li>select_data_query (string) -- The SELECT query that will ingest the data to train the model.</li>
+<li>training_options (JSON as string) -- optional value that contains additional training parameters. For a full list of the parameters check the <a href="/PredictorInterface/#learn">PredictorInterface</a>.</li>
+</ul>
+<h3 id="query-the-model">Query the model</h3>
+<p>To query the model and get the predictions SELECT the target variable, confidence and explanation for that prediction.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span> <span class="n">price</span> <span class="k">AS</span> <span class="n">predicted</span><span class="p">,</span> <span class="n">price_confidence</span> <span class="k">AS</span> <span class="n">confidence</span><span class="p">,</span> <span class="n">price_explain</span> <span class="k">AS</span> <span class="n">info</span> <span class="k">FROM</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">used_cars_model</span> <span class="k">WHERE</span> <span class="n">model</span><span class="o">=</span><span class="ss">&quot;A6&quot;</span> <span class="k">AND</span> <span class="n">mileage</span><span class="o">=</span><span class="mi">36203</span> <span class="k">AND</span> <span class="n">transmission</span><span class="o">=</span><span class="ss">&quot;Automatic&quot;</span>  <span class="k">AND</span> <span class="n">fuelType</span><span class="o">=</span><span class="ss">&quot;Diesel&quot;</span> <span class="k">AND</span> <span class="n">mpg</span><span class="o">=</span><span class="ss">&quot;64.2&quot;</span> <span class="k">AND</span> <span class="n">engineSize</span><span class="o">=</span><span class="mi">2</span> <span class="k">AND</span> <span class="k">year</span><span class="o">=</span><span class="mi">2016</span> <span class="k">AND</span> <span class="n">tax</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>
+</code></pre></div>
+
+
+<p>You should get a similar response from MindsDB as:</p>
+<table>
+<thead>
+<tr>
+<th>price</th>
+<th>predicted</th>
+<th>info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>13111</td>
+<td>0.9921</td>
+<td>Check JSON bellow</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;predicted_value&quot;</span><span class="p">:</span> <span class="mi">13111</span><span class="p">,</span>
+    <span class="nt">&quot;confidence&quot;</span><span class="p">:</span> <span class="mf">0.9921</span><span class="p">,</span>
+    <span class="nt">&quot;prediction_quality&quot;</span><span class="p">:</span> <span class="s2">&quot;very confident&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;confidence_interval&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10792</span><span class="p">,</span> <span class="mi">32749</span><span class="p">],</span>
+    <span class="nt">&quot;important_missing_information&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="nt">&quot;confidence_composition&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;Model&quot;</span><span class="p">:</span> <span class="mf">0.009</span><span class="p">,</span>
+        <span class="nt">&quot;year&quot;</span><span class="p">:</span> <span class="mf">0.013</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;extra_insights&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;if_missing&quot;</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="nt">&quot;Model&quot;</span><span class="p">:</span> <span class="mi">12962</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;year&quot;</span><span class="p">:</span> <span class="mi">12137</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;transmission&quot;</span><span class="p">:</span> <span class="mi">2136</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;mileage&quot;</span><span class="p">:</span> <span class="mi">22706</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;fuelType&quot;</span><span class="p">:</span> <span class="mi">7134</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;tax&quot;</span><span class="p">:</span> <span class="mi">13210</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;mpg&quot;</span><span class="p">:</span> <span class="mi">27409</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;engineSize&quot;</span><span class="p">:</span> <span class="mi">13111</span>
+        <span class="p">}]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<p>To get additional information about the integration check out <a href="">Machine Learning Models as Tables with MariaDB</a> tutorial.</p>
                 
               
               
@@ -1347,15 +1439,15 @@ Remember that depending on your dataset, these variables might change. Just reme
       
     </div>
     
-      <script src="../assets/javascripts/vendor.f45d2d8d.min.js"></script>
-      <script src="../assets/javascripts/bundle.74d0b805.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.f45d2d8d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.74d0b805.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.7f7c8775.min.js"
+            worker: "../../assets/javascripts/worker/search.7f7c8775.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
