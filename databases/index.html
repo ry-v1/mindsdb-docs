@@ -15,7 +15,7 @@
     
     
       
-        <title>Machine Learning Models as Tables - MindsDB Documentation</title>
+        <title>AI Tables - MindsDB Documentation</title>
       
     
     
@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#machine-learning-models-as-table" class="md-skip">
+        <a href="#ai-tables" class="md-skip">
           Skip to content
         </a>
       
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Machine Learning Models as Tables
+              AI Tables
             
           </span>
         </div>
@@ -228,9 +228,55 @@
       
     
     
-    <a href="./" title="Machine Learning Models as Tables" class="md-nav__link md-nav__link--active">
-      Machine Learning Models as Tables
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        AI Tables
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="AI Tables" class="md-nav__link md-nav__link--active">
+      AI Tables
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aitables-example" class="md-nav__link">
+    AITables example
+  </a>
+  
+    <nav class="md-nav" aria-label="AITables example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-used-car-price-example" class="md-nav__link">
+    The used car price example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -241,8 +287,8 @@
 
 
   <li class="md-nav__item">
-    <a href="Clickhouse/" title="AutoML in ClickHouse" class="md-nav__link">
-      AutoML in ClickHouse
+    <a href="MariaDB/" title="AI Tables in MariaDB" class="md-nav__link">
+      AI Tables in MariaDB
     </a>
   </li>
 
@@ -253,8 +299,8 @@
 
 
   <li class="md-nav__item">
-    <a href="MariaDB/" title="AutoML in MariaDB" class="md-nav__link">
-      AutoML in  MariaDB
+    <a href="Clickhouse/" title="AI Tables in ClickHouse" class="md-nav__link">
+      AI Tables in ClickHouse
     </a>
   </li>
 
@@ -1157,6 +1203,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aitables-example" class="md-nav__link">
+    AITables example
+  </a>
+  
+    <nav class="md-nav" aria-label="AITables example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-used-car-price-example" class="md-nav__link">
+    The used car price example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1175,10 +1251,45 @@
                   
                 
                 
-                <h1 id="machine-learning-models-as-table">Machine Learning Models as Table</h1>
+                <h1 id="ai-tables">AI Tables</h1>
 <p>Starting from MindsDB 2.0 version you can train machine learning models straight from the database by using MindsDB and the most popular database management systems like MySQL, MariaDB, PostgreSQL, ClickHouse. Any database user can now create, train and test machine learning models with the same knowledge they have of SQL. </p>
 <p><img alt="MindsDB-Databases" src="/assets/databases/ex-dbs.png" /></p>
-<p>This integration works by accessing MindsDB as if it is external MySQL database, in short words by exposing machine learning models as tables that can be queried. You simply train the models with an INSERT statement. Then SELECT what you want to predict and you pass in the WHERE statement for the prediction.</p>
+<h2 id="aitables-example">AITables example</h2>
+<p>AITables differ from normal tables in that they can generate predictions upon being queried and returning such predictions like if it was data that existed on the table. Simply put, an AI-Table allows you to use machine learning models as if they were normal  database tables, in something that in plain SQL looks like this; </p>
+<div class="codehilite"><pre><span></span><code> <span class="k">SELECT</span> <span class="o">&lt;</span><span class="n">predicted_variable</span><span class="o">&gt;</span> <span class="k">FROM</span> <span class="o">&lt;</span><span class="n">ML_model</span><span class="o">&gt;</span> <span class="k">WHERE</span> <span class="o">&lt;</span><span class="n">conditions</span><span class="o">&gt;</span> 
+</code></pre></div>
+
+
+<p>To really sink in this idea, let us expand the concept through an example. </p>
+<h3 id="the-used-car-price-example">The used car price example</h3>
+<p>Imagine that you want to solve the problem of estimating the right price for a car on your website that has been selling used cars over the past 2 years. </p>
+<p>The data is persistend in your database inside a table called <code>used_cars_data</code> where you keep records of every car you have sold so far, storing information such as: price, transmission, mileage, fuel_type, road_tax, mpg (Miles Per Gallon) and engine_size.  </p>
+<p>Since you have historical data, you know that you could use Machine Learning to solve this problem. Wouldn't it be nice if you could simply tell your database server to do and manage the Machine Learning parts for you?</p>
+<p>At MindsDB we think so too! And AI-Tables baked directly to your database are here to do exactly that.</p>
+<p>You can for instance with a single INSERT statement, create a machine learning model/predictor trained to predict ‘price’ using the data that lives in the table <code>sold_cars</code> and publish it as an AI-Table called 'used_cars_model'.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span>
+   <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">)</span> 
+<span class="k">VALUES</span>
+   <span class="p">(</span><span class="s1">&#39;used_cars_model&#39;</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">used_cars_data</span><span class="p">);</span>
+</code></pre></div>
+
+
+<p>After that you can get price predictions by querying the generated 'used_cars_model' AI-Table, as follows: </p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span> <span class="n">price</span><span class="p">,</span> 
+       <span class="n">confidence</span> 
+<span class="k">FROM</span>   <span class="n">mindsdb</span><span class="p">.</span><span class="n">used_cars_model</span> 
+<span class="k">WHERE</span>  <span class="n">model</span> <span class="o">=</span> <span class="ss">&quot;a6&quot;</span> 
+       <span class="k">AND</span> <span class="n">mileage</span> <span class="o">=</span> <span class="mi">36203</span> 
+       <span class="k">AND</span> <span class="n">transmission</span> <span class="o">=</span> <span class="ss">&quot;automatic&quot;</span> 
+       <span class="k">AND</span> <span class="n">fueltype</span> <span class="o">=</span> <span class="ss">&quot;diesel&quot;</span> 
+       <span class="k">AND</span> <span class="n">mpg</span> <span class="o">=</span> <span class="ss">&quot;64.2&quot;</span> 
+       <span class="k">AND</span> <span class="n">enginesize</span> <span class="o">=</span> <span class="mi">2</span> 
+       <span class="k">AND</span> <span class="k">year</span> <span class="o">=</span> <span class="mi">2016</span> 
+       <span class="k">AND</span> <span class="n">tax</span> <span class="o">=</span> <span class="mi">20</span><span class="p">;</span> 
+</code></pre></div>
+
+
+<p>As you can see with AI-Tables, we are aiming to simplify Machine Learning mechanics to simple SQL queries, so that you can focus on the important part; which is to think about what predictions you need and what data you want your ML to learn from to make such predictions. </p>
 <p><img alt="MindsDB-AutoML in Databases" src="/assets/databases/db-automl.png" /></p>
 <p>Currently, we are supporting the integration with:</p>
 <ul>
