@@ -301,6 +301,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    Delete the model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train-and-predict-multiple-features" class="md-nav__link">
+    Train and predict multiple features
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1261,6 +1275,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    Delete the model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train-and-predict-multiple-features" class="md-nav__link">
+    Train and predict multiple features
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1297,12 +1325,12 @@
 </div>
 <p>The avaiable configuration options are:</p>
 <ul>
-<li>api -- This key is used for starting the MindsDB http server by providing:<ul>
+<li>api['http] -- This key is used for starting the MindsDB http server by providing:<ul>
 <li>host(default 0.0.0.0.) - The mindsdb server address.</li>
 <li>port(default 47334) - The mindsdb server port.</li>
 </ul>
 </li>
-<li>mysql -- This key is used for database integrations that works through MySQL protocol. The required keys are:<ul>
+<li>api['mysql'] -- This key is used for database integrations that works through MySQL protocol. The required keys are:<ul>
 <li>user(default root).</li>
 <li>password(default empty).</li>
 <li>host(default localhost).</li>
@@ -1408,15 +1436,15 @@ The --config specifies the location of the configuration file. </p>
 <div class="codehilite"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span>
    <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">,</span> <span class="n">training_options</span><span class="p">)</span> 
 <span class="k">VALUES</span>
-   <span class="p">(</span><span class="s1">&#39;used_cars_model&#39;</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM test.UsedCarsData&#39;</span><span class="p">,</span> <span class="err">{</span><span class="ss">&quot;option&quot;</span><span class="p">:</span> <span class="ss">&quot;value&quot;</span><span class="err">}</span><span class="p">);</span>
+   <span class="p">(</span><span class="s1">&#39;used_cars_model&#39;</span><span class="p">,</span> <span class="s1">&#39;price&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM test.UsedCarsData&#39;</span><span class="p">,</span> <span class="ss">&quot;option,value&quot;</span><span class="p">);</span>
 </code></pre></div>
 
 
 <ul>
 <li>name (string) -- The name of the predictor.</li>
-<li>predict (string) --  The feature you want to predict, in this example SO2.</li>
+<li>predict (string) --  The feature you want to predict, in this example price. To predict multiple featurs include a comma separated string e.g 'price,year'.</li>
 <li>select_data_query (string) -- The SELECT query that will ingest the data to train the model.</li>
-<li>training_options (JSON as string) -- optional value that contains additional training parameters. For a full list of the parameters check the <a href="/PredictorInterface/#learn">PredictorInterface</a>.</li>
+<li>training_options (JSON as comma separated string) -- optional value that contains additional training parameters. For a full list of the parameters check the <a href="/PredictorInterface/#learn">PredictorInterface</a>.</li>
 </ul>
 <h3 id="query-the-model">Query the model</h3>
 <p>To query the model and get the predictions SELECT the target variable, confidence and explanation for that prediction.</p>
@@ -1488,6 +1516,36 @@ The --config specifies the location of the configuration file. </p>
 </code></pre></div>
 
 
+<h3 id="delete-the-model">Delete the model</h3>
+<p>To delete the predictor that you have previously created, you need to delete it from <code>mindsdb.predictors</code> table. The name should be equal to name added in the INSERT statment while creating the predictor, e.g:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span> <span class="k">WHERE</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;used_cars_model&#39;</span>
+</code></pre></div>
+
+
+<h3 id="train-and-predict-multiple-features">Train and predict multiple features</h3>
+<p>You can train a model that will predict multiple features by adding a comma separated features values in the predict column. e.g to predict the <code>price</code> and a <code>year</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span>
+   <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">,</span> <span class="n">training_options</span><span class="p">)</span> 
+<span class="k">VALUES</span>
+   <span class="p">(</span><span class="s1">&#39;used_cars_model&#39;</span><span class="p">,</span> <span class="s1">&#39;price,year&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM test.UsedCarsData&#39;</span><span class="p">,</span> <span class="ss">&quot;option,value&quot;</span><span class="err">}</span><span class="p">);</span>
+</code></pre></div>
+
+
+<p>And query it using the <code>select_data_query</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span>
+   <span class="n">price</span> <span class="k">AS</span> <span class="n">predicted</span><span class="p">,</span>
+<span class="k">FROM</span>
+   <span class="n">mindsdb</span><span class="p">.</span><span class="n">used_cars_model</span> 
+<span class="k">WHERE</span>
+    <span class="n">select_data_query</span><span class="o">=</span><span class="s1">&#39;SELECT year FROM price_data&#39;</span><span class="p">;</span>
+</code></pre></div>
+
+
+<p>The requirements to query with <code>select_data_query</code> are:</p>
+<ul>
+<li>It must be a valid SQL statement</li>
+<li>It must return columns with names the same as predictor fields.</li>
+</ul>
 <p>If you want to follow along with a tutorial check out <a href="mindsdb.com/blog">AI Tables in MariaDB</a> tutorial.</p>
                 
               

@@ -313,6 +313,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    Delete the model
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1261,6 +1268,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    Delete the model
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1298,12 +1312,12 @@ using different parameters creata a new config.json file. </p>
 </div>
 <p>The avaiable configuration options are:</p>
 <ul>
-<li>api -- This key is used for starting the MindsDB http server by providing:<ul>
+<li>api['http] -- This key is used for starting the MindsDB http server by providing:<ul>
 <li>host(default 0.0.0.0.) - The mindsdb server address.</li>
 <li>port(default 47334) - The mindsdb server port.</li>
 </ul>
 </li>
-<li>mysql -- This key is used for database integrations that works through MySQL protocol. The required keys are:<ul>
+<li>api['mysql'] -- This key is used for database integrations that works through MySQL protocol. The required keys are:<ul>
 <li>user(default root).</li>
 <li>password(default empty).</li>
 <li>host(default localhost).</li>
@@ -1318,7 +1332,7 @@ using different parameters creata a new config.json file. </p>
 </li>
 </ul>
 </li>
-<li>integrations -- This key specifies the integration type in this case <code>default_clickhouse</code>. The required keys are:<ul>
+<li>integrations['default_clickhouse'] -- This key specifies the integration type in this case <code>default_clickhouse</code>. The required keys are:<ul>
 <li>user(default default) - The ClickHouse user name.</li>
 <li>host(default localhost) - Connect to the ClickHouse server on the given host. </li>
 <li>password - The password of the ClickHouse user. </li>
@@ -1465,6 +1479,12 @@ The --config specifies the location of the configuration file. </p>
         <span class="p">}]</span>
     <span class="p">}</span>
 <span class="p">}</span>
+</code></pre></div>
+
+
+<h3 id="delete-the-model">Delete the model</h3>
+<p>If you want to delete the predictor that you have previously created run:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">commands</span> <span class="k">values</span> <span class="p">(</span><span class="s1">&#39;DELETE predictor airq_predictor&#39;</span><span class="p">);</span>
 </code></pre></div>
 
 
