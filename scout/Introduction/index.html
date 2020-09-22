@@ -1008,8 +1008,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#download-mindsdb-scout" class="md-nav__link">
-    Download MindsDB Scout
+  <a href="#download-mindsdb-scoutdepricated-option" class="md-nav__link">
+    Download MindsDB Scout(Depricated option)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-scout" class="md-nav__link">
+    Start Scout
   </a>
   
 </li>
@@ -1215,8 +1222,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#download-mindsdb-scout" class="md-nav__link">
-    Download MindsDB Scout
+  <a href="#download-mindsdb-scoutdepricated-option" class="md-nav__link">
+    Download MindsDB Scout(Depricated option)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-scout" class="md-nav__link">
+    Start Scout
   </a>
   
 </li>
@@ -1256,21 +1270,33 @@
                 
                 
                 <h1 id="introduction-to-mindsdb-scout">Introduction to MindsDB Scout</h1>
-<p>MindsDB Scout is a graphical user interface that sits on top of MindsDB and MindsDB Server.</p>
-<h2 id="download-mindsdb-scout">Download MindsDB Scout</h2>
+<p>MindsDB Scout is a graphical user interface that sits on top of MindsDB and MindsDB Server. It lets you to upload, analyze and visualize your data, train machine learning models and query them with few clicks directly from the Databases, your local file system or external resources.</p>
+<h2 id="download-mindsdb-scoutdepricated-option">Download MindsDB Scout(Depricated option)</h2>
 <p>MindsDB Scout works on the most widely used operating systems. One of the requirements before installing it is to have Python &gt;=3.6 installed. You can download it for free from the <a href="https://www.mindsdb.com/product">MindsDB product page</a>.</p>
+<h2 id="start-scout">Start Scout</h2>
+<div class="codehilite"><pre><span></span><code><span class="err"> python3 -m mindsdb --api=http,mysql</span>
+</code></pre></div>
+
+
+<p>When MindsDB server is started it will display the URL for accessing Scout:</p>
+<div class="codehilite"><pre><span></span><code><span class="err">GUI should be available by http://0.0.0.0:47334/static/index.html</span>
+</code></pre></div>
+
+
+<p>Open up <code>http://0.0.0.0:47334/static/index.html</code> on your browser and the Scout should be started</p>
 <h2 id="tutorial">Tutorial</h2>
 <p>We have created a few tutorials that will help you to successfully install and use MindsDB Scout:</p>
 <ul>
 <li><a href="https://www.mindsdb.com/blog/mindsdb-scout-overview">An Overview of MindsDB Scout</a></li>
-<li><a href="https://www.mindsdb.com/blog/data-science-with-scout">Perform Data Science with MindsDB Scout</a></li>
-<li>MindsDB Scout tutorial <iframe width="560" height="315" src="https://www.youtube.com/embed/fOwdv4j26CA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+<li><a href="https://www.mindsdb.com/blog/data-science-with-scout">Perform Data Science with MindsDB Scout</a>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/fOwdv4j26CA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
 </ul>
 <h2 id="overview-of-mindsdb-scout">Overview of MindsDB Scout</h2>
-<p>The MindsDB Scout interface is divided into 4 dashboards.</p>
+<p>The MindsDB Scout interface is divided into 5 dashboards.</p>
 <ul>
 <li><a href="/scout/Connection">Connection</a></li>
-<li><a href="/scout/Datasources">Datasources</a></li>
+<li><a href="/scout/Databases">Databases</a></li>
+<li><a href="/scout/Datasources">Datasets</a></li>
 <li><a href="/scout/Predictors">Predictors</a></li>
 <li><a href="/scout/Query">Query</a></li>
 </ul>
