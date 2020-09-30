@@ -325,8 +325,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../GoogleColab/" title="Google Colab" class="md-nav__link">
-      Google Colab
+    <a href="../Timeseries/" title="Timeseries Data" class="md-nav__link">
+      Timeseries Data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GoogleColab/" title="Running on Google Colab" class="md-nav__link">
+      Running on Google Colab
     </a>
   </li>
 
@@ -380,14 +392,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Advanced Data types
+        Advanced usecases
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
         </span>
       </label>
     
-    <a href="./" title="Advanced Data types" class="md-nav__link md-nav__link--active">
-      Advanced Data types
+    <a href="./" title="Advanced usecases" class="md-nav__link md-nav__link--active">
+      Advanced usecases
     </a>
     
       
@@ -438,54 +450,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#timeseries-predictions" class="md-nav__link">
-    Timeseries predictions
-  </a>
-  
-    <nav class="md-nav" aria-label="Timeseries predictions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-a-timeseries" class="md-nav__link">
-    What is a timeseries ?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mandatory-arguments" class="md-nav__link">
-    Mandatory arguments
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optional-arguments" class="md-nav__link">
-    Optional arguments
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-example_1" class="md-nav__link">
-    Code example
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-approaches-to-timeseries-data" class="md-nav__link">
-    Other approaches to timeseries data
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#unbalanced-dataset" class="md-nav__link">
     Unbalanced dataset
   </a>
@@ -519,18 +483,6 @@
   <li class="md-nav__item">
     <a href="../../Config/" title="Configuration Settings" class="md-nav__link">
       Configuration Settings
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../features/ColumnMetrics/" title="Column metrics" class="md-nav__link">
-      Column metrics
     </a>
   </li>
 
@@ -1191,54 +1143,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#timeseries-predictions" class="md-nav__link">
-    Timeseries predictions
-  </a>
-  
-    <nav class="md-nav" aria-label="Timeseries predictions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-a-timeseries" class="md-nav__link">
-    What is a timeseries ?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mandatory-arguments" class="md-nav__link">
-    Mandatory arguments
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#optional-arguments" class="md-nav__link">
-    Optional arguments
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-example_1" class="md-nav__link">
-    Code example
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-approaches-to-timeseries-data" class="md-nav__link">
-    Other approaches to timeseries data
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#unbalanced-dataset" class="md-nav__link">
     Unbalanced dataset
   </a>
@@ -1265,7 +1169,7 @@
                   
                 
                 
-                  <h1>Advanced Data types</h1>
+                  <h1>Advanced usecases</h1>
                 
                 <h2 id="multiple-column-predictions">Multiple column predictions</h2>
 <h3 id="what-is-a-multiple-column-prediction">What is a multiple column prediction ?</h3>
@@ -1300,53 +1204,6 @@
 
 <p>Please provide the full path to a file on your local machine, not a url or the binary data from an image loaded up in a dataframe.</p>
 <p>Currently, the timeline on supporting multimedia output is still undecided, if you need that feature or want to implement, feel free to contact us. That being said, image outputs might actually work, we just haven't tested anything yet.</p>
-<h2 id="timeseries-predictions">Timeseries predictions</h2>
-<h3 id="what-is-a-timeseries">What is a timeseries ?</h3>
-<p>A timeseries is a document where rows are related to each other in a sequential way, such that the prediction of the value in the present row should take into account a number of previous rows.</p>
-<p>To build a timeseries model you need to call <code>learn</code> with timeseries specific arguments:</p>
-<h3 id="mandatory-arguments">Mandatory arguments</h3>
-<ul>
-<li>order_by  -- The column on which to order the rows being feed into the model (e.g. a timestamp)</li>
-<li>window_size -- The number of rows to "look back" into when making a prediction, after the rows are ordered by the order_by column and split into groups. This is an alias for <code>window_size_samples</code>, they are interchangeable. You can use <code>window_size_seconds</code> instead if you want to use a number of seconds passing on the order by column, rather than a fixed number (please note, this approach assumes the order by column is or can be converted internally into a unix timestamp)</li>
-</ul>
-<h3 id="optional-arguments">Optional arguments</h3>
-<ul>
-<li>group_by -- The column based on which to group multiple unrelated entities present in your timeseries data. If your data is coming from multiple sources, this argument can be a differentiator between those sources (e.g a uuid for the source).</li>
-</ul>
-<h3 id="code-example_1">Code example</h3>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">mindsdb</span>
-
-<span class="n">mdb</span> <span class="o">=</span> <span class="n">mindsdb</span><span class="o">.</span><span class="n">Predictor</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;assembly_machines_model&#39;</span><span class="p">)</span>
-<span class="n">mdb</span><span class="o">.</span><span class="n">learn</span><span class="p">(</span>
-    <span class="n">from_data</span><span class="o">=</span><span class="s1">&#39;assembly_machines_historical_data.tsv&#39;</span><span class="p">,</span>
-    <span class="n">to_predict</span><span class="o">=</span><span class="s1">&#39;chance_of_failure&#39;</span>
-    <span class="c1"># timeseries specific args</span>
-    <span class="p">,</span><span class="n">order_by</span><span class="o">=</span><span class="s1">&#39;timestamp&#39;</span> <span class="c1"># The time of this reading</span>
-    <span class="p">,</span><span class="n">window_size_seconds</span><span class="o">=</span> <span class="mi">12000</span> <span class="c1"># Use the last 1200 seconds of data to train for the prediction of a row, If you want a fixed nr of rows, use window_size_samples instead</span>
-    <span class="p">,</span><span class="n">group_by</span> <span class="o">=</span> <span class="s1">&#39;machine_id&#39;</span> <span class="c1"># Train the model as a timeseries for each individual machine</span>
-<span class="p">)</span>
-
-<span class="n">results</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">when_data</span><span class="o">=</span><span class="s1">&#39;assembly_machines_data.tsv&#39;</span><span class="p">)</span>
-</code></pre></div>
-
-
-<h3 id="other-approaches-to-timeseries-data">Other approaches to timeseries data</h3>
-<p>Another way of approaching a timeseries prediction, if you don't want to use mindsdb's interface, is to simply include array's for the non-group-by values in your rows.</p>
-<p>For example, to train, you could use the following csv:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">X</span> <span class="n">vlas</span><span class="p">,</span><span class="n">previous</span> <span class="n">Y</span> <span class="n">vlas</span><span class="p">,</span> <span class="n">Y</span> <span class="n">now</span>
-<span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span> <span class="mi">4</span><span class="p">],[</span><span class="mi">1</span> <span class="mi">4</span> <span class="mi">9</span><span class="p">],</span><span class="mi">16</span>
-<span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">4</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">16</span><span class="p">],</span><span class="mi">25</span>
-<span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],[</span><span class="mi">9</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span><span class="mi">25</span><span class="p">],</span><span class="mi">36</span>
-</code></pre></div>
-
-
-<p>And your model would be fit to predict the <code>Y now</code> column for this csv:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">X</span> <span class="n">vlas</span><span class="p">,</span><span class="n">previous</span> <span class="n">Y</span> <span class="n">vlas</span>
-<span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">10</span><span class="p">][</span><span class="mi">49</span><span class="p">,</span><span class="mi">64</span><span class="p">,</span><span class="mi">81</span><span class="p">]</span>
-<span class="p">[</span><span class="mi">33</span><span class="p">,</span><span class="mi">34</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span><span class="mi">36</span><span class="p">][</span><span class="mi">1089</span><span class="p">,</span><span class="mi">1156</span><span class="p">,</span><span class="mi">1225</span><span class="p">]</span>
-</code></pre></div>
-
-
 <h2 id="unbalanced-dataset">Unbalanced dataset</h2>
 <p>Given a dataset that is "imbalanced", the model being trained might not give the results you expect. For example, let's say you have the following dataset:</p>
 <div class="codehilite"><pre><span></span><code><span class="n">data</span><span class="o">.</span><span class="n">csv</span>
