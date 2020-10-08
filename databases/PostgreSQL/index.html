@@ -10,16 +10,16 @@
       
       
       
-      <link rel="shortcut icon" href="../assets/mdb_logo.png">
+      <link rel="shortcut icon" href="../../assets/mdb_logo.png">
       <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.0.0">
     
     
       
-        <title>Configuration Settings</title>
+        <title>AI Tables in PostgreSQL - MindsDB Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.c3000690.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c3000690.min.css">
       
       
     
@@ -33,7 +33,7 @@
     
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     
       
@@ -55,7 +55,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-set-config-variables" class="md-skip">
+        <a href="#ai-tables-in-postgresql" class="md-skip">
           Skip to content
         </a>
       
@@ -66,9 +66,9 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="MindsDB Documentation" class="md-header-nav__button md-logo" aria-label="MindsDB Documentation">
+    <a href="../.." title="MindsDB Documentation" class="md-header-nav__button md-logo" aria-label="MindsDB Documentation">
       
-  <img src="../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -82,7 +82,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Configuration Settings
+              AI Tables in PostgreSQL
             
           </span>
         </div>
@@ -152,9 +152,9 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation">
+    <a href="../.." title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation">
       
-  <img src="../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
     MindsDB Documentation
@@ -181,7 +181,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Installing/" title="Installing MindsDB" class="md-nav__link">
+    <a href="../../Installing/" title="Installing MindsDB" class="md-nav__link">
       Installing MindsDB
     </a>
   </li>
@@ -191,10 +191,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       AutoML in Databases
@@ -218,7 +220,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../databases/" title="AI Tables" class="md-nav__link">
+    <a href="../" title="AI Tables" class="md-nav__link">
       AI Tables
     </a>
   </li>
@@ -228,11 +230,95 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../databases/PostgreSQL/" title="AI Tables in PostgreSQL" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        AI Tables in PostgreSQL
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="AI Tables in PostgreSQL" class="md-nav__link md-nav__link--active">
       AI Tables in PostgreSQL
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-mindsdb" class="md-nav__link">
+    Start MindsDB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train-new-model" class="md-nav__link">
+    Train new model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-the-model" class="md-nav__link">
+    Query the model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    Delete the model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train-and-predict-multiple-features" class="md-nav__link">
+    Train and predict multiple features
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -242,7 +328,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../databases/MariaDB/" title="AI Tables in MariaDB" class="md-nav__link">
+    <a href="../MariaDB/" title="AI Tables in MariaDB" class="md-nav__link">
       AI Tables in MariaDB
     </a>
   </li>
@@ -254,7 +340,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../databases/MySQL/" title="AI Tables in MySQL" class="md-nav__link">
+    <a href="../MySQL/" title="AI Tables in MySQL" class="md-nav__link">
       AI Tables in MySQL
     </a>
   </li>
@@ -266,7 +352,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../databases/Clickhouse/" title="AI Tables in ClickHouse" class="md-nav__link">
+    <a href="../Clickhouse/" title="AI Tables in ClickHouse" class="md-nav__link">
       AI Tables in ClickHouse
     </a>
   </li>
@@ -281,12 +367,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       AutoML from code
@@ -308,12 +392,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
     
     <label class="md-nav__link" for="nav-3-1">
       Python native
@@ -337,7 +419,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/BasicExample/" title="Starter Example" class="md-nav__link">
+    <a href="../../tutorials/BasicExample/" title="Starter Example" class="md-nav__link">
       Starter Example
     </a>
   </li>
@@ -349,7 +431,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/Timeseries/" title="Timeseries Data" class="md-nav__link">
+    <a href="../../tutorials/Timeseries/" title="Timeseries Data" class="md-nav__link">
       Timeseries Data
     </a>
   </li>
@@ -361,7 +443,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../GoogleColab/" title="Running on Google Colab" class="md-nav__link">
+    <a href="../../GoogleColab/" title="Running on Google Colab" class="md-nav__link">
       Running on Google Colab
     </a>
   </li>
@@ -373,7 +455,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../JupyterNotebook/" title="Running on Jupyter Notebook" class="md-nav__link">
+    <a href="../../JupyterNotebook/" title="Running on Jupyter Notebook" class="md-nav__link">
       Running on Jupyter Notebook
     </a>
   </li>
@@ -385,7 +467,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../PredictorInterface/" title="Predictor Interface" class="md-nav__link">
+    <a href="../../PredictorInterface/" title="Predictor Interface" class="md-nav__link">
       Predictor Interface
     </a>
   </li>
@@ -397,7 +479,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../FunctionalInterface/" title="Functional Interface" class="md-nav__link">
+    <a href="../../FunctionalInterface/" title="Functional Interface" class="md-nav__link">
       Functional Interface
     </a>
   </li>
@@ -409,7 +491,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/AdvancedExamples/" title="Advanced usecases" class="md-nav__link">
+    <a href="../../tutorials/AdvancedExamples/" title="Advanced usecases" class="md-nav__link">
       Advanced usecases
     </a>
   </li>
@@ -421,7 +503,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../features/DataSources/" title="Data sources" class="md-nav__link">
+    <a href="../../features/DataSources/" title="Data sources" class="md-nav__link">
       Data sources
     </a>
   </li>
@@ -431,49 +513,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Configuration Settings
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Configuration Settings" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../Config/" title="Configuration Settings" class="md-nav__link">
       Configuration Settings
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-set-config-variables" class="md-nav__link">
-    How to set config variables?
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -483,7 +527,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../server/SDKs/" title="MindsDB SDK" class="md-nav__link">
+    <a href="../../server/SDKs/" title="MindsDB SDK" class="md-nav__link">
       MindsDB SDK
     </a>
   </li>
@@ -545,7 +589,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/PredictiveMaintenance/" title="Predictive Maintenance" class="md-nav__link">
+    <a href="../../tutorials/PredictiveMaintenance/" title="Predictive Maintenance" class="md-nav__link">
       Predictive Maintenance
     </a>
   </li>
@@ -587,7 +631,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/CreditScoring/" title="Credit Scoring" class="md-nav__link">
+    <a href="../../tutorials/CreditScoring/" title="Credit Scoring" class="md-nav__link">
       Credit Scoring
     </a>
   </li>
@@ -629,7 +673,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/CustomerLifetimeValue/" title="Custiner Lifetime Value Optimization" class="md-nav__link">
+    <a href="../../tutorials/CustomerLifetimeValue/" title="Custiner Lifetime Value Optimization" class="md-nav__link">
       Custiner Lifetime Value Optimization
     </a>
   </li>
@@ -641,7 +685,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/FraudDetection/" title="Fraud Detection" class="md-nav__link">
+    <a href="../../tutorials/FraudDetection/" title="Fraud Detection" class="md-nav__link">
       Fraud Detection
     </a>
   </li>
@@ -683,7 +727,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/PatientHealthOutcomes/" title="Patient Health" class="md-nav__link">
+    <a href="../../tutorials/PatientHealthOutcomes/" title="Patient Health" class="md-nav__link">
       Patient Health
     </a>
   </li>
@@ -695,7 +739,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/MedicalDiagnosis/" title="Medical Diagnosis" class="md-nav__link">
+    <a href="../../tutorials/MedicalDiagnosis/" title="Medical Diagnosis" class="md-nav__link">
       Medical Diagnosis
     </a>
   </li>
@@ -737,7 +781,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/HotelBooking/" title="Hotel Booking Demand" class="md-nav__link">
+    <a href="../../tutorials/HotelBooking/" title="Hotel Booking Demand" class="md-nav__link">
       Hotel Booking Demand
     </a>
   </li>
@@ -779,7 +823,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../tutorials/ChurnReduction/" title="Customer Churn Reduction" class="md-nav__link">
+    <a href="../../tutorials/ChurnReduction/" title="Customer Churn Reduction" class="md-nav__link">
       Customer Churn Reduction
     </a>
   </li>
@@ -836,7 +880,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lightwood/info/" title="Introduction to Lightwood" class="md-nav__link">
+    <a href="../../lightwood/info/" title="Introduction to Lightwood" class="md-nav__link">
       Introduction to Lightwood
     </a>
   </li>
@@ -848,7 +892,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../lightwood/API/" title="Predictor API" class="md-nav__link">
+    <a href="../../lightwood/API/" title="Predictor API" class="md-nav__link">
       Predictor API
     </a>
   </li>
@@ -915,7 +959,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Introduction/" title="Getting Started" class="md-nav__link">
+    <a href="../../scout/Introduction/" title="Getting Started" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -927,7 +971,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Connection/" title="Connection" class="md-nav__link">
+    <a href="../../scout/Connection/" title="Connection" class="md-nav__link">
       Connection
     </a>
   </li>
@@ -939,7 +983,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Datasources/" title="Datasources" class="md-nav__link">
+    <a href="../../scout/Datasources/" title="Datasources" class="md-nav__link">
       Datasources
     </a>
   </li>
@@ -951,7 +995,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Predictors/" title="Predictors" class="md-nav__link">
+    <a href="../../scout/Predictors/" title="Predictors" class="md-nav__link">
       Predictors
     </a>
   </li>
@@ -963,7 +1007,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../scout/Query/" title="Query" class="md-nav__link">
+    <a href="../../scout/Query/" title="Query" class="md-nav__link">
       Query
     </a>
   </li>
@@ -1010,7 +1054,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../comparisons/ComparsionWithOtherLibraries/" title="Comparison with other Libraries" class="md-nav__link">
+    <a href="../../comparisons/ComparsionWithOtherLibraries/" title="Comparison with other Libraries" class="md-nav__link">
       Comparison with other Libraries
     </a>
   </li>
@@ -1052,7 +1096,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../FAQ/" title="FAQ" class="md-nav__link">
+    <a href="../../FAQ/" title="FAQ" class="md-nav__link">
       FAQ
     </a>
   </li>
@@ -1064,7 +1108,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../InsideMindsDB/" title="Inside MindsDB" class="md-nav__link">
+    <a href="../../InsideMindsDB/" title="Inside MindsDB" class="md-nav__link">
       Inside MindsDB
     </a>
   </li>
@@ -1089,6 +1133,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon">
@@ -1099,8 +1145,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-set-config-variables" class="md-nav__link">
-    How to set config variables?
+  <a href="#prerequisite" class="md-nav__link">
+    Prerequisite
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    Configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-mindsdb" class="md-nav__link">
+    Start MindsDB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train-new-model" class="md-nav__link">
+    Train new model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query-the-model" class="md-nav__link">
+    Query the model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    Delete the model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#train-and-predict-multiple-features" class="md-nav__link">
+    Train and predict multiple features
   </a>
   
 </li>
@@ -1117,7 +1205,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/Config.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/databases/PostgreSQL.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
                 
@@ -1125,41 +1213,202 @@
                   
                 
                 
-                  <h1>Configuration Settings</h1>
-                
-                <p>MindsDB has config variables that can be set by as environment variables or on a script.</p>
-<p>Here are some of the variables of general interest:</p>
+                <h1 id="ai-tables-in-postgresql">AI Tables in PostgreSQL</h1>
+<p>Now, you can train machine learning models straight from the database by using MindsDB and <a href="https://www.postgresql.org/">PostgreSQL</a>.</p>
+<p><img alt="MindsDB-Postgres" src="/assets/databases/mdb-postgres.png" /></p>
+<h3 id="prerequisite">Prerequisite</h3>
+<p>You will need MindsDB version &gt;= 2.3.0 and PostgreSQL installed:</p>
 <ul>
-<li><code>MINDSDB_STORAGE_PATH</code> Where MindsDB stores its data, by default it is the path where pip installs packages + <code>mindsdb/mindsdb_storage</code></li>
-<li><code>DEFAULT_MARGIN_OF_ERROR</code> The reverse of how much of the data you feed in mindsdb will sample in order to generate insights about the data. For example, if this is set to 0.4, mindsdb will sample 0.6 of the data.</li>
-<li><code>DEFAULT_LOG_LEVEL</code> What logs mindsdb will display (By default this is set to: <code>CONST.INFO_LOG_LEVEL</code>)</li>
+<li><a href="/Installing/">Install MindsDB</a></li>
+<li><a href="https://www.postgresql.org/download/">Install PostgreSQL</a></li>
+<li><a href="https://github.com/EnterpriseDB/mysql_fdw#mysql-foreign-data-wrapper-for-postgresql">Install PostgreSQL foreign data wrapper for MySQL</a></li>
 </ul>
-<h2 id="how-to-set-config-variables">How to set config variables?</h2>
-<p>You can either set it as environment variables or you can do it in your script.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<h3 id="configuration">Configuration</h3>
+<div class="admonition info">
+<p class="admonition-title">Default configuration</p>
+<p>MindsDB will try to use the default configuration(hosts, ports, usernames) for each of the database integrations. If you want to extend that or you are using different parameters create a new config.json file. </p>
+</div>
+<p>The avaiable configuration options are:</p>
+<ul>
+<li>api['http] -- This key is used for starting the MindsDB http server by providing:<ul>
+<li>host(default 127.0.0.1) - The mindsdb server address.</li>
+<li>port(default 47334) - The mindsdb server port.</li>
+</ul>
+</li>
+<li>api['mysql'] -- This key is used for database integrations that works through MySQL protocol. The required keys are:<ul>
+<li>user(default root).</li>
+<li>password(default empty).</li>
+<li>host(default 127.0.0.1).</li>
+<li>port(default 47335).</li>
+</ul>
+</li>
+<li>integrations['default_postgres'] -- This key specifies the integration type in this case <code>default_postgres</code>. The required keys are:<ul>
+<li>user(default postgres) - The Postgres user name.</li>
+<li>host(default 127.0.0.1) - Connect to the PostgreSQL server on the given host. </li>
+<li>password - The password of the Postgres account. </li>
+<li>type - Integration type(mariadb, postgresql, mysql, clickhouse, mongodb).</li>
+<li>port(default 5432) - The TCP/IP port number to use for the connection. </li>
+</ul>
+</li>
+<li>log['level'] -- The logging configuration(not required):<ul>
+<li>console - "INFO", "DEBUG", "ERROR".</li>
+<li>file - Location of the log file.</li>
+</ul>
+</li>
+<li>storage_dir -- The directory where mindsdb will store models and configuration.</li>
+</ul>
+<details class="success">
+    <summary> Configuration example</summary>
 
-<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;&lt;varname&gt;&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">value</span><span class="o">&gt;</span>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;api&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;http&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;47334&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;mysql&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;127.0.0.1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="s2">&quot;47335&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;root&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;config_version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.3&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;debug&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nt">&quot;integrations&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;default_postgres&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;database&quot;</span><span class="p">:</span> <span class="s2">&quot;postgres&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;enabled&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="nt">&quot;host&quot;</span><span class="p">:</span> <span class="s2">&quot;localhost&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;password&quot;</span><span class="p">:</span> <span class="s2">&quot;postgres&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;port&quot;</span><span class="p">:</span> <span class="mi">5432</span><span class="p">,</span>
+            <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;postgres&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;postgres&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;log&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;console&quot;</span><span class="p">:</span> <span class="s2">&quot;DEBUG&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;file&quot;</span><span class="p">:</span> <span class="s2">&quot;INFO&quot;</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;storage_dir&quot;</span><span class="p">:</span> <span class="s2">&quot;/storage&quot;</span>
+<span class="p">}</span>
 </code></pre></div>
 
 
-<p>For example, if you want to specify a different storage directory:</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+</details>
 
-<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;MINDSDB_STORAGE_PATH&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;/home/my_wonderful_username/place_where_i_store_big_files/&#39;</span>
-
-<span class="c1"># now we import mindsdb</span>
-<span class="kn">from</span> <span class="nn">mindsdb</span> <span class="kn">import</span> <span class="n">MindsDB</span>
+<div class="admonition warning">
+<p class="admonition-title">Install PostgreSQL foreign data wrapper for MySQL</p>
+<p>The Foreign Data Wrapper (mysql_fwd) can be installed from the <a href="https://github.com/EnterpriseDB/mysql_fdw#mysql-foreign-data-wrapper-for-postgresql">EnterpriseDB repo</a>.</p>
+</div>
+<h3 id="start-mindsdb">Start MindsDB</h3>
+<p>To start mindsdb run following command:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">python3</span> <span class="o">-</span><span class="n">m</span> <span class="n">mindsdb</span> <span class="o">--</span><span class="n">api</span><span class="o">=</span><span class="n">mysql</span> <span class="o">--</span><span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">json</span>
 </code></pre></div>
 
 
-<p>Alternatively, we can se the variable after importing mindsdb:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">mindsdb</span><span class="o">.</span><span class="n">CONFIG</span><span class="o">.</span><span class="n">MINDSDB_STORAGE_PATH</span> <span class="o">=</span> <span class="s1">&#39;/home/my_wonderful_username/place_where_i_store_big_files/&#39;</span>
+<p>The --api parameter specifies the type of API to use in this case mysql. 
+The --config specifies the location of the configuration file. </p>
+<h3 id="train-new-model">Train new model</h3>
+<p>To train a new model, insert a new record inside the mindsdb.predictors table as:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span><span class="s1">&#39;us_consumption&#39;</span><span class="p">,</span> <span class="s1">&#39;consumption&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM us_consumption&#39;</span><span class="p">);</span>
 </code></pre></div>
 
 
-<p>You can see all the config variables available <a href="https://github.com/mindsdb/mindsdb/blob/master/mindsdb/config/__init__.py">here</a></p>
-                
-                  
+<ul>
+<li>name (string) -- The name of the predictor.</li>
+<li>predict (string) --  The feature you want to predict, in this example consumption. To predict multiple featurs include a comma separated string e.g 'consumption,income'.</li>
+<li>select_data_query (string) -- The SELECT query that will ingest the data to train the model.</li>
+<li>training_options (JSON as comma separated string) -- optional value that contains additional training parameters. For a full list of the parameters check the <a href="/PredictorInterface/#learn">PredictorInterface</a>.</li>
+</ul>
+<h3 id="query-the-model">Query the model</h3>
+<p>To query the model and get the predictions SELECT the target variable, confidence and explanation for that prediction.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span>
+   <span class="n">consumption</span> <span class="k">AS</span> <span class="n">predicted</span><span class="p">,</span>
+   <span class="n">consumption_confidence</span> <span class="k">AS</span> <span class="n">confidence</span><span class="p">,</span>
+   <span class="n">consumption_explain</span> <span class="k">AS</span> <span class="n">info</span> 
+<span class="k">FROM</span>
+   <span class="n">mindsdb</span><span class="p">.</span><span class="n">us_consumption</span> 
+<span class="k">WHERE</span>
+   <span class="n">income</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="mi">182497938</span> 
+   <span class="k">AND</span> <span class="n">production</span> <span class="o">=</span> <span class="mi">5</span><span class="p">.</span><span class="mi">854555956</span>  
+   <span class="k">AND</span> <span class="n">savings</span> <span class="o">=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">183292657</span> 
+   <span class="k">AND</span> <span class="n">unemployment</span> <span class="o">=</span> <span class="mi">0</span><span class="p">.</span><span class="mi">1</span> 
+</code></pre></div>
+
+
+<p>You should get a similar response from MindsDB as:</p>
+<table>
+<thead>
+<tr>
+<th>consumption</th>
+<th>predicted</th>
+<th>info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.4979682087292199</td>
+<td>0.9475</td>
+<td>Check JSON bellow</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><code><span class="p">{</span>
+    <span class="nt">&quot;predicted_value&quot;</span><span class="p">:</span> <span class="mf">1.4979682087292199</span><span class="p">,</span>
+    <span class="nt">&quot;confidence&quot;</span><span class="p">:</span> <span class="mf">0.9475</span><span class="p">,</span>
+    <span class="nt">&quot;prediction_quality&quot;</span><span class="p">:</span> <span class="s2">&quot;very confident&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;confidence_interval&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.025658879956537</span><span class="p">,</span> <span class="mf">1.9702775375019028</span><span class="p">],</span>
+    <span class="nt">&quot;important_missing_information&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="nt">&quot;confidence_composition&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="nt">&quot;extra_insights&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;if_missing&quot;</span><span class="p">:</span> <span class="p">[{</span>
+            <span class="nt">&quot;income&quot;</span><span class="p">:</span> <span class="mf">0.6966906986877563</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;production&quot;</span><span class="p">:</span> <span class="mf">2.5382917051924445</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;savings&quot;</span><span class="p">:</span> <span class="mf">1.169812868271305</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="nt">&quot;unemployment&quot;</span><span class="p">:</span> <span class="mf">1.3</span>
+            <span class="mi">443338862946717</span>
+        <span class="p">}]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+<h3 id="delete-the-model">Delete the model</h3>
+<p>To delete the predictor that you have previously created, you need to delete it from <code>mindsdb.predictors</code> table. The name should be equal to name added in the INSERT statment while creating the predictor, e.g:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span> <span class="k">WHERE</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;us_consumption&#39;</span>
+</code></pre></div>
+
+
+<h3 id="train-and-predict-multiple-features">Train and predict multiple features</h3>
+<p>You can train a model that will predict multiple features by adding a comma separated features values in the predict column. e.g to predict the <code>consumption</code> and a <code>income</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">INSERT</span> <span class="k">INTO</span>
+   <span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">predict</span><span class="p">,</span> <span class="n">select_data_query</span><span class="p">,</span> <span class="n">training_options</span><span class="p">)</span> 
+<span class="k">VALUES</span>
+   <span class="p">(</span><span class="s1">&#39;us_consumption&#39;</span><span class="p">,</span> <span class="s1">&#39;consumption, income&#39;</span><span class="p">,</span> <span class="s1">&#39;SELECT * FROM us_consumption&#39;</span><span class="p">,</span> <span class="ss">&quot;option,value&quot;</span><span class="err">}</span><span class="p">);</span>
+</code></pre></div>
+
+
+<p>And query it using the <code>select_data_query</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="k">SELECT</span>
+   <span class="n">consumption</span> <span class="k">AS</span> <span class="n">predicted</span><span class="p">,</span>
+<span class="k">FROM</span>
+   <span class="n">mindsdb</span><span class="p">.</span><span class="n">used_cars_model</span> 
+<span class="k">WHERE</span>
+    <span class="n">select_data_query</span><span class="o">=</span><span class="s1">&#39;SELECT income FROM us_consumption&#39;</span><span class="p">;</span>
+</code></pre></div>
+
+
+<p>The requirements to query with <code>select_data_query</code> are:</p>
+<ul>
+<li>It must be a valid SQL statement</li>
+<li>It must return columns with names the same as predictor fields.</li>
+</ul>
                 
               
               
@@ -1176,15 +1425,15 @@
       
     </div>
     
-      <script src="../assets/javascripts/vendor.f45d2d8d.min.js"></script>
-      <script src="../assets/javascripts/bundle.74d0b805.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.f45d2d8d.min.js"></script>
+      <script src="../../assets/javascripts/bundle.74d0b805.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.7f7c8775.min.js"
+            worker: "../../assets/javascripts/worker/search.7f7c8775.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
