@@ -13,7 +13,7 @@ title: Customer Churn Reduction
 
 Customer churn or customer turnover is the loss of clients or customers. Telecommunication companies often use customer attrition analysis and customer attrition rates as one of their key business metrics because the cost of retaining an existing customer is far less than acquiring a new one.  Use churn prediction models that predict customer churn by assessing their propensity of risk to churn.
 
-{{ read_csv('https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/churn/dataset/test.csv', nrows=7) }}
+{{ read_csv(r'https://raw.githubusercontent.com/mindsdb/mindsdb-examples/master/classics/churn/dataset/test.csv', nrows=7) }}
 
 
 <details>
